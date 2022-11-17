@@ -30,7 +30,26 @@
             </button>
           </div>
           <div class="modal-body">
-            <form >
+            <form action="" method="POST">
+                <div class="">
+                  <label for="">Title key</label>
+                  <input type="text" class="form-control" name="">
+                </div>
+                <div class="">
+                  <label for="">Title </label>
+                  <input type="text" class="form-control" name="">
+                </div>
+                <div class="">
+                  <label for="">Description</label>
+                  <input type="text" class="form-control" name="">
+                </div>
+                <div class="text-right pt-6">
+                  <a href="" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Cancel</a>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Save</button>
+                </div>
+                
+            </form>
+            <!-- <form >
               <div class="form-group" :class="errors.name ? 'is-valid' :''">
                 <div class="list_form_page">
                   <div class="item_form_page w-4/12 pr-6 ">  
@@ -86,7 +105,7 @@
                     />
                   </div>
                 </div>
-                <!-- <div class="text-red-500" v-if="errors.name">{{ errors.name }}</div> -->
+               
               </div>
               <div class="modal-footer">
                 <button
@@ -100,23 +119,46 @@
                   class="inline-block px-6 py-2.5 bg-gray-800 text-white font-black text-xl leading-tight uppercase rounded shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out"
                 >Save changes</button>
               </div>
-            </form>
+            </form> -->
           </div>
 
           
         </div>
       </div>
     </div>
-
-   <div class="page_content">
+    <form action="" class="overflow-x-auto relative shadow-md sm:rounded-lg mt-5">
+      <table class="w-full text-xl text-left text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+          <td scope="col" class="py-3 px-6 text-xl">STT</td>
+          <td scope="col" class="py-3 px-6 text-xl">Title</td>
+          <td scope="col" class="py-3 px-6 text-xl">Description</td>
+          <td class="sr-only">Action</td>
+        </thead>
+        <tbody>
+          @if (!empty($page))
+            @foreach($page as $key => $item)
+          <tr v-for="item in pagesĂ">
+            <td class="py-3 px-6 text-xl">{{$key+1}}</td>
+            <td class="py-3 px-6 text-xl"></td>
+            <td class="py-3 px-6 text-xl"></td>
+          </tr>
+          @endforeach
+          @else
+          <tr>
+            <td>Khoong co trang page nao</td>
+          </tr>          
+        </tbody>
+      </table>
+    </form>
+   <!-- <div class="page_content">
      <el-table >
         <el-table-comlum label="STT"></el-table-comlum>
         <el-table-comlum label="Tite"></el-table-comlum>
         <el-table-comlum label="Description"></el-table-comlum>
         <el-table-comlum label="Action"></el-table-comlum>
      </el-table>
-   </div>
-    <pagination :links="permissions.links" />
+   </div> -->
+    <!-- <pagination :links="permissions.links" /> -->
   </section>
 </template>
 
@@ -126,9 +168,9 @@ import Layout from "@/Components/Layout/Layout";
 import ContentHeaderVue from "@/Components/Layout/ContentHeader";
 import Pagination from "@/Components/Pagination";
 import BreadCrumb from "@/Pages/Tour/BreadCrumb";
-import Alert from "@/Components/Alert";
 
-import ContextMenu from "./ContextMenu.vue";
+
+
 export default {
   layout: Layout,
   components: {
@@ -137,7 +179,7 @@ export default {
     ContentHeaderVue,
    
     BreadCrumb,
-    ContextMenu
+     
   },
   props:{
     errors:Object

@@ -195,7 +195,7 @@ export default {
     },
     Delete(id) {
       if (!confirm("Are you sure want to remove?")) return;
-      this.$inertia.delete(route("permissions.delete", id));
+      this.$inertia.de lete(route("permissions.delete", id));
     },
     contextMenu(item, event) {
       Bus.$emit("contextMenuPemission", item, event);

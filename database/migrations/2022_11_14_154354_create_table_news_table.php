@@ -18,7 +18,7 @@ class CreateTableNewsTable extends Migration
             $table->string('title');
             $table->string('conetnt');
             $table->string('image')->nullable();
-            $table->foreign('users_id')->references('id')->on('users');
+            $table->unsignedBigInteger('users_id');
             $table->timestamps();
 
         });
