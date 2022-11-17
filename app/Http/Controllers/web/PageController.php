@@ -10,8 +10,8 @@ class PageController extends Controller
 {
     //
     public function index(){
-        $page = DB::select('SELECT * FROM pages');
-        return Inertia::render('web/page');
+        $pages = DB::select('SELECT * FROM pages');
+        return Inertia::render('web/page',compact('pages'));
         // return view('Pages.web.page', compact('page'));
     }
     public function postAdd(Request $request){
