@@ -65,6 +65,7 @@
           </tr>
         </thead>
         <tbody>
+<<<<<<< HEAD
         
           <tr v-for="(pages,index) in pages" :key="index">
             <td class="py-3 px-6 text-xl">{{index}}</td>
@@ -73,6 +74,18 @@
           </tr>
          
                   
+=======
+          
+          <tr>
+            <td class="py-3 px-6 text-xl">{{$key+1}}</td>
+            <td class="py-3 px-6 text-xl"></td>
+            <td class="py-3 px-6 text-xl"></td>
+          </tr>
+         
+          <tr>
+            <td>Khoong co trang page nao</td>
+          </tr>          
+>>>>>>> 531a5a8f030369b313daadd43a85d91f5ba4853b
         </tbody>
       </table>
     </form>
@@ -103,7 +116,7 @@ export default {
     Link,
     Head,
     ContentHeaderVue,
-   
+ 
     BreadCrumb,
      
   },
@@ -130,6 +143,7 @@ export default {
   },
   
   methods:{
+<<<<<<< HEAD
     save() {
       if (this.editMode) {
         this.form.put(route("roles.update", this.form.id), {
@@ -160,6 +174,10 @@ export default {
       }
     },
   }
+=======
+   
+  },
+>>>>>>> 531a5a8f030369b313daadd43a85d91f5ba4853b
 };
 </script>
 <style>
