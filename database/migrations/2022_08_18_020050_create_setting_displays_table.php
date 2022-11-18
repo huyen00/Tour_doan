@@ -17,6 +17,7 @@ class CreateSettingDisplaysTable extends Migration
             $table->id();
             $table->boolean('sound')->default(true)->nullable();
             $table->boolean('share')->default(true)->nullable();
+            // $table->boolean('back_scene')->default(true)->nullable();
             $table->boolean('fullscreen')->default(true)->nullable();
             $table->boolean('infor')->default(true)->nullable();
             $table->boolean('setting_map')->default(true)->nullable();
@@ -25,6 +26,7 @@ class CreateSettingDisplaysTable extends Migration
             $table->boolean('rotate')->default(true)->nullable();
             $table->boolean('setting_vr')->default(true)->nullable();
             $table->boolean('contact')->default(true)->nullable();
+           
             $table->unsignedBigInteger('tour_id')->unsigned()->nullable();
             $table->foreign('tour_id')->references('id')->on('tours')->onDelete('cascade');
             $table->timestamps();

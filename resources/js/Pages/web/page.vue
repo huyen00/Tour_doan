@@ -44,8 +44,9 @@
                   <input type="text" class="form-control" name="">
                 </div>
                 <div class="text-right pt-6">
-                  <a href="" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Cancel</a>
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Save</button>
+                  <button   class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" data-dismiss="modal">Cancel</button>
+                <button  @click.prevent="save()"
+                  type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Save</button>
                 </div>
                 
             </form>
@@ -115,7 +116,8 @@ export default {
      
       form: this.$inertia.form({
         id: null,
-        name: null
+        title: null,
+        description:null,
       }),
       crumbs: [
         {
@@ -128,7 +130,35 @@ export default {
   },
   
   methods:{
-    
+    save() {
+      if (this.editMode) {
+        this.form.put(route("roles.update", this.form.id), {
+          preserveState: true,
+          onError: errors => {
+            if (Object.keys(errors).length > 0) {
+              this.editMode = true;
+            }
+          },
+          onSuccess: page => {
+            $("#exampleModal").modal("hide");
+            this.reset();
+          }
+        });
+      } else {
+        this.form.post(route("roles.store"), {
+          preserveState: true,
+          onError: errors => {
+            if (Object.keys(errors).length > 0) {
+              this.editMode = false;
+            }
+          },
+          onSuccess: page => {
+            $("#exampleModal").modal("hide");
+            this.reset();
+          }
+        });
+      }
+    },
   }
 };
 </script>

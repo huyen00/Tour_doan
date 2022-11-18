@@ -34,6 +34,7 @@ class SettingDisplayController extends Controller
             $tour->setting_display->update([
                 'sound' => $request->sound,
                 'share' => $request->share,
+                // 'back_scene' => $request->back_scene,
                 'fullscreen' => $request->fullscreen,
                 'infor' => $request->infor,
                 'setting_map' => $request->setting_map,
@@ -47,6 +48,7 @@ class SettingDisplayController extends Controller
             $tour->setting_display()->create([
                 'sound' => $request->sound,
                 'share' => $request->share,
+                // 'back_scene' => $request->back_scene,
                 'fullscreen' => $request->fullscreen,
                 'infor' => $request->infor,
                 'setting_map' => $request->setting_map,

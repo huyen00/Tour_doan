@@ -49,7 +49,7 @@
                   :appendNewTag="false"
                   :createTag="false"
                   :searchable="true"
-                  label="name"
+                  label="?"
                   valueProp="id"
                   trackBy="name"
                   :options="permissions"
