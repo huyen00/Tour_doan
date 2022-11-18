@@ -76,7 +76,7 @@
 			<i class="fas fa-volume-off"></i>
 
 		</li>
-
+	
 		<div class="change_sound" id="change_sound">
 			<li class="item_sound" id="sound1">
 				<span>Nhạc nền 1</span>
@@ -169,9 +169,11 @@
 					<i class="fas fa-share-alt"></i>
 				</li>
       	<?php endif; ?>
+		<?php if($tour->setting_display->back_scene): ?>
 		<li class="item_icon" id="icon_backscene">
 				<i class="fa-solid fa-reply"></i>
-			</li>
+		</li>
+		<?php endif; ?>
 		
 		</ul>
 		<ul class="name_scene">
@@ -336,69 +338,7 @@
 </div>
 
 <!-- image hotspot -->
-<div class="image_hotspot" id="image_hotspot">
-	<span class="button_close" id="close_general" onclick="close_image_hotspot()">
-		<i class="fas fa-times"></i>
-	</span>
-	<div class="form_image">
-		<div class="row list_image">
-			<div class="item_image">
-				<img src="panos/1_flycam1.tiles/thumb.jpg" class="img-fluid img_album" alt="">
-				<div class="title_image">
-					<span>Toàn cảnh 01</span>
-				</div>
-			</div>
-			<div class="item_image">
-				<img src="panos/15_nguyenlieua1.tiles/thumb.jpg" class="img-fluid img_album" alt="">
-				<div class="title_image">
-					<span>Khu nguyên liệu A1</span>
-				</div>
-			</div>
-			<div class="item_image">
-				<img src="panos/2_nguyenlieua2.tiles/thumb.jpg" class="img-fluid img_album" alt="">
-				<div class="title_image">
-					<span>Khu nguyên liệu A2</span>
-				</div>
-			</div>
-			<div class="item_image">
-				<img src="panos/3_nguyenlieua4.tiles/thumb.jpg" class="img-fluid img_album" alt="">
-				<div class="title_image">
-					<span>Khu nguyên liệu A3</span>
-				</div>
-			</div>
-			<div class="item_image">
-				<img src="panos/13_khunguyenlieub1.tiles/thumb.jpg" class="img-fluid img_album" alt="">
-				<div class="title_image">
-					<span>Khu nguyên liệu B1</span>
-				</div>
-			</div>
-			<div class="item_image">
-				<img src="panos/4_nguyenlieub6.tiles/thumb.jpg" class="img-fluid img_album" alt="">
-				<div class="title_image">
-					<span>Khu nguyên liệu B2</span>
-				</div>
-			</div>
-			<div class="item_image">
-				<img src="panos/5_khusxcayduoclieu.tiles/thumb.jpg" class="img-fluid img_album" alt="">
-				<div class="title_image">
-					<span>Khu nhà trưng bày</span>
-				</div>
-			</div>
-			<div class="item_image">
-				<img src="panos/6_traloai1.tiles/thumb.jpg" class="img-fluid img_album" alt="">
-				<div class="title_image">
-					<span>Khu trưng bày dược liệu</span>
-				</div>
-			</div>
-			<div class="item_image">
-				<img src="panos/7_traloai2.tiles/thumb.jpg" class="img-fluid img_album" alt="">
-				<div class="title_image">
-					<span>khu trưng bày trà Loại 2</span>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+
 
 <div class="guide" id="guide">
 	<span class="button_close" id="close_general" onclick="close_guide()">
