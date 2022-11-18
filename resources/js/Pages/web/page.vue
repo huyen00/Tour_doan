@@ -108,15 +108,80 @@
       </div>
     </div>
 
-   <div class="page_content">
+   <!-- <div class="page_content">
      <el-table >
         <el-table-comlum label="STT"></el-table-comlum>
         <el-table-comlum label="Tite"></el-table-comlum>
         <el-table-comlum label="Description"></el-table-comlum>
         <el-table-comlum label="Action"></el-table-comlum>
      </el-table>
-   </div>
-    <pagination :links="permissions.links" />
+   </div> -->
+  <!-- <div class="flex flex-col mt-6">
+      <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+        <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+          <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+            <table class="min-w-full divide-y divide-gray-200">
+              <thead class="bg-gray-50">
+                <tr>
+                  <th
+                    scope="col"
+                    class="px-6 py-3 text-left text-xl font-back text-gray-500 uppercase tracking-wider"
+                  >id</th>
+                  <th
+                    scope="col"
+                    class="px-6 py-3 text-left text-xl font-back text-gray-500 uppercase tracking-wider"
+                  >title</th>
+                  <th
+                    scope="col"
+                    class="px-6 py-3 text-left text-xl font-back text-gray-500 uppercase tracking-wider"
+                  >description</th>
+                  <th scope="col" class="relative px-6 py-3">
+                    <span class="sr-only">Edit</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="bg-white divide-y divide-gray-200">
+                <tr v-for="(pages,index) in pages" :key="index">
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <div class="flex items-center">
+                      <div class="ml-4">
+                        <div class="text-xl font-medium text-gray-900">{{ index }}</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <div class="text-xl text-gray-900">{{ pages.title }}</div>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <div class="text-xl text-gray-900">{{ pages.description }}</div>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <span
+                      v-for="pages in pages"
+                      :key="pages.index"
+                      class="bg-gray-600 text-gray-100 text-xl px-2 mx-1 py-1 rounded"
+                    >{{ pages.title }}</span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                    <button
+                      data-toggle="modal"
+                      data-target="#exampleModal"
+                      class="inline-block px-6 py-2.5 bg-gray-200 text-gray-700 font-black text-xl leading-tight uppercase rounded shadow-md hover:bg-gray-300 hover:shadow-lg focus:bg-gray-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-400 active:shadow-lg transition duration-150 ease-in-out"
+                      @click="edit(pages)"
+                    >Update</button>
+                    <button
+                      @click="deleteRow(pages.id)"
+                      class="inline-block px-6 py-2.5 bg-gray-800 text-white font-black text-xl leading-tight uppercase rounded shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out"
+                    >Delete</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <pagination class="mt-6" :links="roles.links" />
+          </div>
+        </div>
+      </div>
+    </div>  -->
   </section>
 </template>
 
@@ -128,16 +193,15 @@ import Pagination from "@/Components/Pagination";
 import BreadCrumb from "@/Pages/Tour/BreadCrumb";
 import Alert from "@/Components/Alert";
 
-import ContextMenu from "./ContextMenu.vue";
 export default {
   layout: Layout,
   components: {
     Link,
     Head,
     ContentHeaderVue,
-   
+ 
     BreadCrumb,
-    ContextMenu
+ 
   },
   props:{
     errors:Object
@@ -161,8 +225,8 @@ export default {
   },
   
   methods:{
-    
-  }
+   
+  },
 };
 </script>
 <style>

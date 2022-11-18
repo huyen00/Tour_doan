@@ -1,4 +1,5 @@
 // xử lý voice
+
 (function ($) {
   embedpano({
     swf: "/" + tour.path + "/tour.swf",
@@ -318,6 +319,7 @@
         var current_scene = String(krpano.get("scene[get(xml.scene)].title"));
         var data = getListHotSpot(current_scene);
          console.log(current_scene );
+         console.log("huyen222" );
       }
 
     //   var list_hotspot = {!! json_encode($list_hotspot_first) !!}
@@ -437,7 +439,7 @@
           // show title scene khi click menu html
           function getSceneTitleName() {
             var title = String(krpano.get("scene[get(xml.scene)].title"));
-            console.log("title =" + title);
+            console.log("huyen");
             $("#name_scene").html(title);
           };
           // xu ly active khi click

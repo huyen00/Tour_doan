@@ -77,6 +77,7 @@ function close_image(id) {
 
 function showform(title,data) {
 
+    console.log("ngaaaaaaa");
     if ($(document).width() < 601) {
         $(".menu_sub").hide();
         $(".menu_icon_slidebar").hide();
@@ -93,6 +94,7 @@ function showform(title,data) {
     $("#title_info_hotspot").html(title);
     $("#text_content_info_hotspot").html(data);
     console.log(data);
+    
 }
 // close info hotspot
 function close_info_hotspot() {
@@ -293,4 +295,6 @@ $(document).ready(function(){
 }, 5000);
 
 });
-1
+function activeText(){
+    console.log("aaaaaaa");
+  }

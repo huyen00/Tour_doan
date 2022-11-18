@@ -10,6 +10,7 @@ class PageController extends Controller
     //
     public function index(){
 
-        return Inertia::render('web/news');
+        return Inertia::render('web/page');
     }
+    
 }

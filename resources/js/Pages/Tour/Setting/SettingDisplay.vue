@@ -29,6 +29,15 @@
               </div>
               <div class="relative block my-4">
                 <input
+                  v-model="form.back_scene"
+                  :checked="setting_display && setting_display.back_scene == 1 ? true : false"
+                  class="toggle-class-public form-radio rounded-md h-10 w-10 text-indigo-600"
+                  type="checkbox"
+                />
+                <label for="checkboxThreeInput">{{ __('back_scene') }}</label>
+              </div>
+              <div class="relative block my-4">
+                <input
                   v-model="form.fullscreen"
                   :checked="setting_display && setting_display.fullscreen == 1 ? true : false"
                   class="toggle-class-public form-radio rounded-md h-10 w-10 text-indigo-600"
@@ -152,6 +161,10 @@ export default {
           this.setting_display && this.setting_display.share
             ? this.setting_display.share
             : false,
+        back_scene:
+          this.setting_display && this.setting_display.back_scene
+            ? this.setting_display.back_scene
+            : false,
         fullscreen:
           this.setting_display && this.setting_display.fullscreen
             ? this.setting_display.fullscreen
@@ -258,4 +271,7 @@ export default {
 </script>
 
 <style>
+.content{
+  min-height: 100%;
+}
 </style>

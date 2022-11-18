@@ -76,7 +76,7 @@
 			<i class="fas fa-volume-off"></i>
 
 		</li>
-
+	
 		<div class="change_sound" id="change_sound">
 			<li class="item_sound" id="sound1">
 				<span>Nhạc nền 1</span>
@@ -169,9 +169,11 @@
 					<i class="fas fa-share-alt"></i>
 				</li>
       	@endif
+		@if($tour->setting_display->back_scene)
 		<li class="item_icon" id="icon_backscene">
 				<i class="fa-solid fa-reply"></i>
-			</li>
+		</li>
+		@endif
 		{{-- <div class="icon_back">
 
 		</div>
@@ -346,7 +348,7 @@
 </div>
 
 <!-- image hotspot -->
-<div class="image_hotspot" id="image_hotspot">
+{{-- <div class="image_hotspot" id="image_hotspot">
 	<span class="button_close" id="close_general" onclick="close_image_hotspot()">
 		<i class="fas fa-times"></i>
 	</span>
@@ -408,7 +410,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div> --}}
 {{-- guide --}}
 <div class="guide" id="guide">
 	<span class="button_close" id="close_general" onclick="close_guide()">
