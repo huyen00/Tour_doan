@@ -26,6 +26,7 @@ class CreateSettingDisplaysTable extends Migration
             $table->boolean('rotate')->default(true)->nullable();
             $table->boolean('setting_vr')->default(true)->nullable();
             $table->boolean('contact')->default(true)->nullable();
+           
             $table->unsignedBigInteger('tour_id')->unsigned()->nullable();
             $table->foreign('tour_id')->references('id')->on('tours')->onDelete('cascade');
             $table->timestamps();
