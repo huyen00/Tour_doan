@@ -135,13 +135,15 @@
           <td class="sr-only">Action</td>
         </thead>
         <tbody>
-          
-          <tr>
+          @if (!empty($page))
+            @foreach($page as $key => $item)
+          <tr >
             <td class="py-3 px-6 text-xl">{{$key+1}}</td>
             <td class="py-3 px-6 text-xl"></td>
             <td class="py-3 px-6 text-xl"></td>
           </tr>
-         
+          @endforeach
+          @else
           <tr>
             <td>Khoong co trang page nao</td>
           </tr>          
@@ -177,7 +179,7 @@ export default {
     ContentHeaderVue,
  
     BreadCrumb,
-     
+ 
   },
   props:{
     errors:Object
