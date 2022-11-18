@@ -34,11 +34,7 @@ class SettingDisplayController extends Controller
             $tour->setting_display->update([
                 'sound' => $request->sound,
                 'share' => $request->share,
-<<<<<<< HEAD
-                // 'back_scene' => $request->back_scene,
-=======
                 'back_scene' => $request->back_scene,
->>>>>>> 531a5a8f030369b313daadd43a85d91f5ba4853b
                 'fullscreen' => $request->fullscreen,
                 'infor' => $request->infor,
                 'setting_map' => $request->setting_map,
@@ -52,11 +48,7 @@ class SettingDisplayController extends Controller
             $tour->setting_display()->create([
                 'sound' => $request->sound,
                 'share' => $request->share,
-<<<<<<< HEAD
-                // 'back_scene' => $request->back_scene,
-=======
                 'back_scene' => $request->back_scene,
->>>>>>> 531a5a8f030369b313daadd43a85d91f5ba4853b
                 'fullscreen' => $request->fullscreen,
                 'infor' => $request->infor,
                 'setting_map' => $request->setting_map,

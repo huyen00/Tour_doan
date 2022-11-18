@@ -65,16 +65,6 @@
           </tr>
         </thead>
         <tbody>
-<<<<<<< HEAD
-        
-          <tr v-for="(pages,index) in pages" :key="index">
-            <td class="py-3 px-6 text-xl">{{index}}</td>
-            <td class="py-3 px-6 text-xl">{{pages.title}}</td>
-            <td class="py-3 px-6 text-xl">{{pages.description}}</td>
-          </tr>
-         
-                  
-=======
           
           <tr>
             <td class="py-3 px-6 text-xl">{{$key+1}}</td>
@@ -85,7 +75,6 @@
           <tr>
             <td>Khoong co trang page nao</td>
           </tr>          
->>>>>>> 531a5a8f030369b313daadd43a85d91f5ba4853b
         </tbody>
       </table>
     </form>
@@ -143,41 +132,8 @@ export default {
   },
   
   methods:{
-<<<<<<< HEAD
-    save() {
-      if (this.editMode) {
-        this.form.put(route("roles.update", this.form.id), {
-          preserveState: true,
-          onError: errors => {
-            if (Object.keys(errors).length > 0) {
-              this.editMode = true;
-            }
-          },
-          onSuccess: page => {
-            $("#exampleModal").modal("hide");
-            this.reset();
-          }
-        });
-      } else {
-        this.form.post(route("roles.store"), {
-          preserveState: true,
-          onError: errors => {
-            if (Object.keys(errors).length > 0) {
-              this.editMode = false;
-            }
-          },
-          onSuccess: page => {
-            $("#exampleModal").modal("hide");
-            this.reset();
-          }
-        });
-      }
-    },
-  }
-=======
    
   },
->>>>>>> 531a5a8f030369b313daadd43a85d91f5ba4853b
 };
 </script>
 <style>

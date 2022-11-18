@@ -17,11 +17,7 @@ class CreateSettingDisplaysTable extends Migration
             $table->id();
             $table->boolean('sound')->default(true)->nullable();
             $table->boolean('share')->default(true)->nullable();
-<<<<<<< HEAD
-            // $table->boolean('back_scene')->default(true)->nullable();
-=======
             $table->boolean('back_scene')->default(true)->nullable();
->>>>>>> 531a5a8f030369b313daadd43a85d91f5ba4853b
             $table->boolean('fullscreen')->default(true)->nullable();
             $table->boolean('infor')->default(true)->nullable();
             $table->boolean('setting_map')->default(true)->nullable();

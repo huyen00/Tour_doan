@@ -173,14 +173,10 @@ export default {
           this.setting_display && this.setting_display.share
             ? this.setting_display.share
             : false,
-<<<<<<< HEAD
-            
-=======
         back_scene:
           this.setting_display && this.setting_display.back_scene
             ? this.setting_display.back_scene
             : false,
->>>>>>> 531a5a8f030369b313daadd43a85d91f5ba4853b
         fullscreen:
           this.setting_display && this.setting_display.fullscreen
             ? this.setting_display.fullscreen
