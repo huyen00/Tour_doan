@@ -316,14 +316,16 @@
       });
       function updateHotspot(){
         var current_scene = String(krpano.get("scene[get(xml.scene)].title"));
+        var current_scene_voice = String(krpano.get("scene[get(xml.scene)].onstart"));
         var data = getListHotSpot(current_scene);
          console.log(current_scene );
+         console.log(current_scene_voice );
       }
 
     //   var list_hotspot = {!! json_encode($list_hotspot_first) !!}
       changeHotspot(list_hotspot);
           function changeHotspot(hotspot) {
-              console.log("ngaaaa");
+              
 
                   krpano.call("set(hotspot[" + hotspot.name + "].ath, " + hotspot.ath +")");
                   krpano.call("set(hotspot[" + hotspot.name + "].atv, " + hotspot.atv +")");
@@ -375,6 +377,9 @@
                     }
                 }
             });
+          }
+          function getvoicescene(){
+            
           }
 
         // xu ly active khi click
@@ -525,6 +530,7 @@
           krpano.call("load_scene(" +link_scene + ")");
           getSceneTitleName();
           updateHotspot();
+          $("#album_thumb").hide();
         });
 
 

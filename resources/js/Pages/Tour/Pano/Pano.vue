@@ -191,6 +191,10 @@
                   <th
                     scope="col"
                     class="px-6 py-3 text-left text-xl font-back text-gray-500 uppercase tracking-wider"
+                  >Voice scene</th>
+                  <th
+                    scope="col"
+                    class="px-6 py-3 text-left text-xl font-back text-gray-500 uppercase tracking-wider"
                   >Hotspot</th>
                   <th
                     scope="col"
@@ -228,6 +232,9 @@
                       <div class="text-xl text-gray-900">
                         <img v-lazy="pano.thumb_img" class="w-50 h-20" />
                       </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <div class="text-xl text-gray-900">{{ pano.id_thumb }}</div>
                     </td>
                     <td class="px-6 py-4 whitespace-nowrap">
                       <div class="text-xl text-gray-900">{{ pano.id_thumb }}</div>

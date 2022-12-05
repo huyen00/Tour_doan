@@ -78,9 +78,11 @@
 		</li>
 	
 		<div class="change_sound" id="change_sound">
+		<!-- @foreach ($tour->sounds as $sounds) -->
 			<li class="item_sound" id="sound1">
 				<span>Nhạc nền 1</span>
 			</li>
+			<!-- @endforeach -->
 			<li class="item_sound" id="sound2">
 				<span>Nhạc nền 2</span>
 			</li>
