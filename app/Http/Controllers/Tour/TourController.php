@@ -127,19 +127,31 @@ class TourController extends Controller
     {
         $file = $tour->path . "/tour.xml";
         $this->dataTourXML = $this->readDataFileXml($file,'scene');
+       
             if(array_key_exists('@attributes',$this->dataTourXML)){
                 // 1 scene
                 $name = $this->dataTourXML['@attributes']['title'];
+                $path_onstart  = $this->dataTourXML['@attributes']['onstart'];
             }else{
                 // nhieu scene
+                // dd($this->dataTourXML);
                 $array_sceneName = array_column($this->dataTourXML,'@attributes');
                 foreach($array_sceneName as $scene){
+                    $list_text = explode(",",($scene['onstart']));
+         
+                    if(count($list_text) > 1){
+                        $link_audio = $list_text[1];
+                    }else{
+                        $link_audio = null;
+                    }
                     $pano = Pano::where('tour_id', $tour->id)->where('id_thumb', $scene['title'])->first();
                     if($pano){
+                      
                         $pano->update([
                             'name' => $scene['title'],
                             'thumb_img' =>  $tour->path . "/". $scene['thumburl'],
                             'id_thumb' => $scene['name'],
+                            'path_onstart' => $link_audio,
                             'tour_id' => $tour->id
                         ]);
 
@@ -148,6 +160,7 @@ class TourController extends Controller
                             'name' => $scene['title'],
                             'thumb_img' =>  $tour->path . "/". $scene['thumburl'],
                             'id_thumb' => $scene['name'],
+                            'path_onstart' => $link_audio,
                             'tour_id' => $tour->id
                         ]);
                     }

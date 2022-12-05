@@ -15,10 +15,11 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use App\Models\CategoryPano;
 use Illuminate\Http\Response;
+use App\Http\Controllers\Traits\FileUploadTrait;
 
 class PanoController extends Controller
 {
-    use FileTrait;
+    use FileTrait, FileUploadTrait;
     public $pathPrefix;
     function __construct(FileManager $fm)
     {
@@ -45,6 +46,7 @@ class PanoController extends Controller
 
     public function update(Request $request, $id)
     {
+       
 
         $this->validate(
             $request,
@@ -53,14 +55,28 @@ class PanoController extends Controller
                 'thumb' => 'nullable|mimes:png,jpg'
             ]
         );
-        $pano = Pano::findOrFail($id);
-
+        $pano = Pano::with('tour')->findOrFail($id);
+        $tour_path = 'Tour/' . $pano->tour->id;
+        if (!file_exists($tour_path)) {
+            mkdir($tour_path, 0777, true);
+        }
+        $voice_path = $tour_path . '/voice/';
+        if (!file_exists($voice_path)) {
+            mkdir($voice_path, 0777, true);
+        }
         $pano->update([
             'name' => $request->name,
         ]);
         if ($request->hasFile('thumb')) {
             $this->updateThumb($request->file('thumb'),  $pano->thumb_img);
         }
+        if ($pano->path_onstart == null) {
+            $pano->path_onstart = $request->hasFile('voice') ? $this->image($request->file('voice'), $voice_path) : null;
+        } elseif ($pano->path_onstart) {
+            $name = time();
+            $pano->path_onstart = $request->hasFile('voice') ? $this->update_image($request->file('voice'), $name, $voice_path, $pano->voice) : $pano->path_onstart;
+        }
+        $pano->save();
         return back()->with('success', 'Update successfully');
     }
 

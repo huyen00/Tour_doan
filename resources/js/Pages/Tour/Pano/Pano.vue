@@ -36,7 +36,48 @@
                 />
                 <div class="text-red-500" v-if="errors.name">{{ errors.name }}</div>
               </div>
-              <div class="form-group" :class="errors.thumb ? 'is-valid' :''">
+              <div class="form-group" :class="errors.voice ? 'is-valid' :''">
+                <label for="recipient-name" class="col-form-label">
+                  Upload
+                  Voice (mp3,mp4)
+                </label>
+                <div class="flex items-center justify-center w-full">
+                  <label
+                    class="flex flex-col w-full h-32 border-4 border-dashed hover:bg-gray-100 hover:border-gray-300"
+                  >
+                    <div class="flex flex-col items-center justify-center pt-7">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-6 h-6 text-gray-400 group-hover:text-gray-600"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      <p
+                        class="pt-1 text-sm tracking-wider text-gray-400 group-hover:text-gray-600"
+                      >Select a voice</p>
+                    </div>
+                    <audio :src="voice" controls></audio>
+                    <input
+                      type="file"
+                      @input="form.voice = $event.target.files[0]"
+                      :class="errors.voice ? 'is-valid' :''"
+                      @change="onFileChangeVoice
+"
+                      class="opacity-0"
+                     
+                      accept="audio/*"
+                    />
+                  </label>
+                  <div class="text-red-500" v-if="errors.voice">{{ errors.voice }}</div>
+                </div>
+              </div>
+              <!-- <div class="form-group" :class="errors.thumb ? 'is-valid' :''">
                 <label for="recipient-name" class="col-form-label">
                   Upload
                   Thumb (jpg,png)
@@ -75,7 +116,7 @@
                   </label>
                   <div class="text-red-500" v-if="errors.thumb">{{ errors.thumb }}</div>
                 </div>
-              </div>
+              </div> -->
               <div class="modal-footer">
                 <button
                   type="button"
@@ -191,6 +232,10 @@
                   <th
                     scope="col"
                     class="px-6 py-3 text-left text-xl font-back text-gray-500 uppercase tracking-wider"
+                  >Voice scene</th>
+                  <th
+                    scope="col"
+                    class="px-6 py-3 text-left text-xl font-back text-gray-500 uppercase tracking-wider"
                   >Hotspot</th>
                   <th
                     scope="col"
@@ -231,6 +276,10 @@
                     </td>
                     <td class="px-6 py-4 whitespace-nowrap">
                       <div class="text-xl text-gray-900">{{ pano.id_thumb }}</div>
+                    </td>
+                    <td class="px-6 py-4 w-24 h-40 whitespace-nowrap voice_scene">
+                      <audio class="w-40 h-12" :src="pano.path_onstart" controls ></audio>
+                     
                     </td>
                     <td>
                       <Link
@@ -326,12 +375,12 @@ export default {
       term: null,
       viewType: "table",
       editMode: false,
-      thumb: null,
+      voice: null,
       form: this.$inertia.form({
         id: null,
         name: null,
-        thumb: null,
-        category: null
+        voice: null,
+        category: null,
       }),
       crumbs: [
         {
@@ -369,7 +418,14 @@ export default {
         });
       }
     },
-
+    reset(){
+      this.form= this.$inertia.form({
+        id: null,
+        name: null,
+        voice: null,
+        category: null,
+      })
+    },
     clickModal() {
       this.editMode = false;
       this.reset();
@@ -379,9 +435,9 @@ export default {
       if (!confirm("Are you sure want to remove?")) return;
       this.$inertia.delete(route("tour.destroy", id));
     },
-    onFileChangeThumb(e) {
+    onFileChangeVoice(e) {
       const file = e.target.files[0];
-      this.thumb = URL.createObjectURL(file);
+      this.voice = URL.createObjectURL(file);
     },
     onChangeElement(data, event) {
       let query = {

@@ -100,13 +100,13 @@
 
       <?php endif; ?>
       <?php if($tour->setting_display->infor): ?>
-			<li class="item_icon" id="icon_info" onclick="show_info()" aria-label="Thông tin dự án" data-balloon-pos="up">
+			<li class="item_icon" id="icon_info" onclick="show_info()" aria-label="<?php echo e(__('infor')); ?>" data-balloon-pos="up">
 				<i class="fas fa-info-circle"></i>
 
 			</li>
       <?php endif; ?>
       <?php if($tour->setting_display->setting_map): ?>
-			<li class="item_icon" id="icon_map"  aria-label="Map" data-balloon-pos="up" onclick="show_map()">
+			<li class="item_icon" id="icon_map"  aria-label="<?php echo e(__('map')); ?>" data-balloon-pos="up" onclick="show_map()">
 				<i class="fas fa-map"></i>
 
 			</li>
@@ -116,22 +116,22 @@
 
 			</li>
 			<?php if($tour->setting_display->show_hotspot): ?>
-			<li class="item_icon" id="hotspot_Close" aria-label="Tắt hotspot" data-balloon-pos="up">
+			<li class="item_icon" id="hotspot_Close" aria-label="<?php echo e(__('hide_hotspot')); ?>" data-balloon-pos="up">
 				<i class="fas fa-toggle-off"></i>
 
 			</li>
-			<li class="item_icon" id="hotspot_open" aria-label="Bật hotspot" data-balloon-pos="up">
+			<li class="item_icon" id="hotspot_open" aria-label="<?php echo e(__('show_hotspot')); ?>" data-balloon-pos="up">
 				<i class="fas fa-toggle-on"></i>
 
 			</li>
       <?php endif; ?>
 
       <?php if($tour->setting_display->rotate): ?>
-			<li class="item_icon" id="icon_rotate" aria-label="Tắt xoay" data-balloon-pos="up">
+			<li class="item_icon" id="icon_rotate" aria-label="<?php echo e(__('off_rotate')); ?>" data-balloon-pos="up">
 				<i class="fa-solid fa-rotate-right"></i>
 
 			</li>
-			<li class="item_icon" id="icon_unrotate" aria-label="Bật xoay" data-balloon-pos="up">
+			<li class="item_icon" id="icon_unrotate" aria-label="<?php echo e(__('open_rotate')); ?>" data-balloon-pos="up">
 				<i class="fa-solid fa-clock-rotate-left"></i>
 
 			</li>
@@ -143,7 +143,7 @@
 			</li>
       <?php endif; ?>
       <?php if($tour->setting_display->fullscreen): ?>
-			<li class="item_icon" id="icon_fullscreen" onclick="toggleFullscreen()" aria-label="Full màn hình" data-balloon-pos="up">
+			<li class="item_icon" id="icon_fullscreen" onclick="toggleFullscreen()" aria-label="<?php echo e(__('fullscreen')); ?>" data-balloon-pos="up">
 				<i class="fas fa-expand"></i>
 			</li>
       <?php endif; ?>
@@ -155,12 +155,12 @@
 	<ul class="menu_contact">
 		<ul class="menu_contact_mobile">
       <?php if($tour->setting_display->contact): ?>
-			<li class="item_icon" id="icon_form" aria-label="Contact" data-balloon-pos="right" onclick="show_contact()">
+			<li class="item_icon" id="icon_form" aria-label="<?php echo e(__('contact')); ?>" data-balloon-pos="right" onclick="show_contact()">
 				<i class="fas fa-address-book"></i>
 			</li>
       <?php endif; ?>
       <?php if($tour->setting_display->guide): ?>
-			<li class="item_icon" id="icon_guide" aria-label="Hướng dẫn" data-balloon-pos="right" onclick="show_guide()">
+			<li class="item_icon" id="icon_guide" aria-label="<?php echo e(__('guide')); ?>" data-balloon-pos="right" onclick="show_guide()">
 				<i class="fas fa-question"></i>
 			</li>
       <?php endif; ?>
@@ -292,23 +292,23 @@
 <!-- contact -->
 <div class="contact" id="contact">
 	<div class="form_contact">
-		<h3 class="title_contact">Liên Hệ </h3>
+		<h3 class="title_contact"><?php echo e(__('contact')); ?></h3>
 		<form id="contact-form" >
 			<input type="hidden" name="_token" value="2d7EP09QskNLTOighldVx0TZxQ3ae1iotrMIeMfq">
 			<div class="form-group ">
-				<input type="text" name="name" id="name" class="form-control" placeholder="Tên ">
+				<input type="text" name="name" id="name" class="form-control" placeholder="<?php echo e(__('name')); ?>">
 			</div>
 			<div class="form-group ">
-				<input type="text" name="email" id="phone" class="form-control" placeholder="Địa chỉ email">
+				<input type="text" name="email" id="phone" class="form-control" placeholder="<?php echo e(__('email')); ?>">
 			</div>
 			<div class="form-group ">
-				<input type="text" name="phone" id="phone" class="form-control" placeholder="Số điện thoại">
+				<input type="text" name="phone" id="phone" class="form-control" placeholder="<?php echo e(__('phone')); ?>">
 			</div>
 			<div class="form-group ">
-				<textarea class="form-control" name="message" id="message" placeholder="Tin nhắn..." rows="3" cols="4"></textarea>
+				<textarea class="form-control" name="message" id="message" placeholder="<?php echo e(__('message')); ?>" rows="3" cols="4"></textarea>
 			</div>
 			<div style="text-align:center">
-				<button type="submit" class=" btn-sub text-uppercase">Gửi cho chúng tôi</button>
+				<button type="submit" class=" btn-sub text-uppercase"><?php echo e(__('send_us')); ?></button>
 			</div>
 		</form>
 	</div>
@@ -380,5 +380,4 @@
 </script>
 
 <?php $__env->stopSection(); ?>
-
 <?php echo $__env->make('tour360.layout.index', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\Tour_doan\resources\views/template/template2.blade.php ENDPATH**/ ?>
