@@ -140,7 +140,7 @@ class TourController extends Controller
                     $list_text = explode(",",($scene['onstart']));
          
                     if(count($list_text) > 1){
-                        $link_audio = $list_text[1];
+                        $link_audio = str_replace(' ','',$list_text[1]);
                     }else{
                         $link_audio = null;
                     }
@@ -151,7 +151,7 @@ class TourController extends Controller
                             'name' => $scene['title'],
                             'thumb_img' =>  $tour->path . "/". $scene['thumburl'],
                             'id_thumb' => $scene['name'],
-                            'path_onstart' => $link_audio,
+                            'path_onstart' => $tour->path.'/'.$link_audio,
                             'tour_id' => $tour->id
                         ]);
 
@@ -160,7 +160,7 @@ class TourController extends Controller
                             'name' => $scene['title'],
                             'thumb_img' =>  $tour->path . "/". $scene['thumburl'],
                             'id_thumb' => $scene['name'],
-                            'path_onstart' => $link_audio,
+                            'path_onstart' => $tour->path.'/'.$link_audio,
                             'tour_id' => $tour->id
                         ]);
                     }

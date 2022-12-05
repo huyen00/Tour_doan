@@ -59,13 +59,13 @@ class TemplateController extends Controller
         $template->link_js = $js_template.'/main.js';
         $template->responsive = $css_template.'/responsive.css';
         $template->save();
-        if (!file_exists(public_path($template->link_js))) {
+        if (!file_exists($template->link_js)) {
             File::put(public_path($template->link_js), file_get_contents(public_path('assets/js/main.js')));
         }
-        if (!file_exists(public_path($template->link_css))) {
+        if (!file_exists($template->link_css)) {
             File::put(public_path($template->link_css), file_get_contents(public_path('assets/css/style.css')));
         }
-        if (!file_exists(public_path($template->responsive))) {
+        if (!file_exists($template->responsive)) {
             File::put(public_path($template->responsive), file_get_contents(public_path('assets/css/responsive.css')));
         }
         return back()->with('success', 'Create successfully');
@@ -113,13 +113,13 @@ class TemplateController extends Controller
         $template->link_js = $js_template.'/main.js';
         $template->responsive = $css_template.'/responsive.css';
         $template->save();
-        if (!file_exists(public_path($template->link_js))) {
+        if (!file_exists($template->link_js)) {
             File::put(public_path($template->link_js), file_get_contents(public_path('assets/js/main.js')));
         }
-        if (!file_exists(public_path($template->link_css))) {
+        if (!file_exists($template->link_css)) {
             File::put(public_path($template->link_css), file_get_contents(public_path('assets/css/style.css')));
         }
-        if (!file_exists(public_path($template->responsive))) {
+        if (!file_exists($template->responsive)) {
             File::put(public_path($template->responsive), file_get_contents(public_path('assets/css/responsive.css')));
         }
         $template->link_css = $css_template.'/style.css';
