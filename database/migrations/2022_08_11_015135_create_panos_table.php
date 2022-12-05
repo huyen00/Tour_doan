@@ -18,6 +18,7 @@ class CreatePanosTable extends Migration
             $table->string('name')->nullable();
             $table->string('thumb_img')->nullable();
             $table->string('id_thumb')->nullable();
+            $table->string('path_onstart')->nullable();
             $table->unsignedBigInteger('tour_id')->unsigned()->nullable();
             $table->foreign('tour_id')->references('id')->on('tours')->onDelete('cascade');
             $table->unsignedBigInteger('category_pano_id')->unsigned()->nullable();

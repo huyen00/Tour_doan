@@ -781,6 +781,14 @@ video {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+}.w-24 {
+  width: 6rem;
+}.w-64 {
+  width: 16rem;
+}.w-32 {
+  width: 8rem;
+}.w-40 {
+  width: 10rem;
 }.min-w-full {
   min-width: 100%;
 }.max-w-xl {
