@@ -57,7 +57,7 @@
         <?php echo $__env->yieldContent('content'); ?>
         <?php if($isEditor == true): ?>
             <div id="btn_Savexml" style=" position: absolute;
-            top: 10px;
+            top: 300px;
             right: 20px;
             z-index: 100;
             background: black;"> Save XMl</div>
