@@ -376,6 +376,7 @@
     var check_info = <?php echo json_encode($tour->infors); ?>
 
     var check_info_number = check_info.length;
+	console.log(tour.panos);
     console.log(check_info[0].id)
 </script>
 

@@ -45,7 +45,9 @@
                   <label
                     class="flex flex-col w-full h-32 border-4 border-dashed hover:bg-gray-100 hover:border-gray-300"
                   >
-                    <div class="flex flex-col items-center justify-center pt-7">
+                  <div class="flex">
+                    <audio :src="voice" controls class=" h-16 mt-7 w-full"></audio>
+                    <div class="flex flex-col items-center justify-center pt-7 w-full">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         class="w-6 h-6 text-gray-400 group-hover:text-gray-600"
@@ -61,8 +63,11 @@
                       <p
                         class="pt-1 text-sm tracking-wider text-gray-400 group-hover:text-gray-600"
                       >Select a voice</p>
+                     
                     </div>
-                    <audio :src="voice" controls></audio>
+                   
+                  </div>
+                    
                     <input
                       type="file"
                       @input="form.voice = $event.target.files[0]"

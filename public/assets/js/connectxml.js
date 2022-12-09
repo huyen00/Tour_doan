@@ -10,6 +10,7 @@
     onready: krpanoReady,
     initvars: {
         editor: editor,
+        pano : tour.panos
     }
   });
   function activeText(){
@@ -324,7 +325,7 @@
       changeHotspot(list_hotspot);
           function changeHotspot(hotspot) {
               console.log("ngaaaa");
-
+              krpano.call("set(scene[get(xml.scene)].onstart, assets/testB.mp3)");
                   krpano.call("set(hotspot[" + hotspot.name + "].ath, " + hotspot.ath +")");
                   krpano.call("set(hotspot[" + hotspot.name + "].atv, " + hotspot.atv +")");
 

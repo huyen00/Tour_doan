@@ -39,7 +39,7 @@
               </div>
 
 
-              <div class="relative block my-4">
+              <!-- <div class="relative block my-4">
                 <input
                   v-model="form.back_scene"
                   :checked="setting_display && setting_display.back_scene == 1 ? true : false"
@@ -47,7 +47,7 @@
                   type="checkbox"
                 />
                 <label for="checkboxThreeInput">{{ __('back_scene') }}</label>
-              </div>
+              </div> -->
               <div class="relative block my-4">
                 <input
                   v-model="form.fullscreen"

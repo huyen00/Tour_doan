@@ -444,6 +444,7 @@
 	var editor = {!! json_encode($isEditor) !!}
     var check_info = {!! json_encode($tour->infors) !!}
     var check_info_number = check_info.length;
+	console.log(tour.panos);
     console.log(check_info[0].id)
 </script>
 
