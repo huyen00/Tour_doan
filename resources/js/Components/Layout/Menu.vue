@@ -28,14 +28,19 @@
         <span class="page">Setting</span>
       </a>
     </li>-->
-    <li tag="li" class="pageli"  v-if="hasAnyPermission(['users-manager'])">
+    <li tag="li" class="pageli" v-if="hasAnyPermission(['users-manager'])">
       <Link :href="route('fm.index')">
         <i class="fa fa-folder-o"></i>
         <span class="page">Files Managers</span>
       </Link>
     </li>
 
-    <li tag="li" class="pageli" :class="[$page.component === 'Template/Index' ? 'active' : '']"  v-if="hasAnyPermission(['users-manager'])">
+    <li
+      tag="li"
+      class="pageli"
+      :class="[$page.component === 'Template/Index' ? 'active' : '']"
+      v-if="hasAnyPermission(['users-manager'])"
+    >
       <Link :href="route('template.index')">
         <i class="fa fa-puzzle-piece" aria-hidden="true"></i>
         <span class="page">Templates</span>
@@ -105,7 +110,7 @@
         </li>
       </ul>
     </li>-->
-    <li class="header" v-if="hasAnyPermission(['users-manager'])" >web managerment</li>
+    <li class="header" v-if="hasAnyPermission(['users-manager'])">web managerment</li>
     <li class="treeview" v-if="hasAnyPermission(['users-manager'])">
       <a href="#">
         <i class="fa fa-list"></i>
@@ -114,20 +119,25 @@
           <i class="fa fa-angle-left fa-fw"></i>
         </span>
       </a>
-      <ul class="treeview-menu" >
+      <ul class="treeview-menu">
         <li :class="[$page.component === 'Admin/Permission' ? 'active' : '']">
-          <Link :href="route('page.index')">
+          <Link :href="route('pages')">
             <i class="fa fa-shield"></i> Pages
           </Link>
         </li>
         <li :class="[$page.component === 'Admin/Permission' ? 'active' : '']">
-          <Link :href="route('page.index')">
+          <Link :href="route('tintuc.index')">
             <i class="fa fa-shield"></i> News
+          </Link>
+        </li>
+        <li :class="[$page.component === 'Admin/Permission' ? 'active' : '']">
+          <Link :href="route('themes.index')">
+            <i class="fa fa-shield"></i> Themes
           </Link>
         </li>
       </ul>
     </li>
-    <li class="header" v-if="hasAnyPermission(['users-manager'])" >User managerment</li>
+    <li class="header" v-if="hasAnyPermission(['users-manager'])">User managerment</li>
     <li class="treeview" v-if="hasAnyPermission(['users-manager'])">
       <a href="#">
         <i class="fa fa-list"></i>
@@ -136,7 +146,7 @@
           <i class="fa fa-angle-left fa-fw"></i>
         </span>
       </a>
-      <ul class="treeview-menu" >
+      <ul class="treeview-menu">
         <li :class="[$page.component === 'Admin/Permission' ? 'active' : '']">
           <Link :href="route('permissions.index')">
             <i class="fa fa-shield"></i> Permissions
@@ -155,14 +165,12 @@
       </ul>
     </li>
     <li class="header" v-if="hasAnyPermission(['users-manager'])">Language</li>
-     <li tag="li" class="pageli" v-if="hasAnyPermission(['users-manager'])">
+    <li tag="li" class="pageli" v-if="hasAnyPermission(['users-manager'])">
       <Link :href="route('language.index')">
         <i class="fa fa-language" aria-hidden="true"></i>
         <span class="page">Langauge</span>
       </Link>
     </li>
-
-
 
     <li class="header">Logout</li>
     <li tag="li" class="pageli">
@@ -182,7 +190,7 @@
 <script>
 import { Link } from "@inertiajs/inertia-vue";
 
-import Language from "@/Components/LanguageSelector"
+import Language from "@/Components/LanguageSelector";
 export default {
   components: {
     Link,

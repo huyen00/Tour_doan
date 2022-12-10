@@ -16,8 +16,9 @@ class DatabaseSeeder extends Seeder
         $this->call([
             // PermissionSeeder::class,
             // RoleSeeder::class,
-            UserSeeder::class,
-            // HotSpotStyleSeeder::class
+            // UserSeeder::class,
+            // HotSpotStyleSeeder::class,
+            ThemeSeeder::class,
         ]);
     }
 }
