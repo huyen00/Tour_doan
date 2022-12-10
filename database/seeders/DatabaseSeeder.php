@@ -17,7 +17,8 @@ class DatabaseSeeder extends Seeder
             PermissionSeeder::class,
             RoleSeeder::class,
             UserSeeder::class,
-            HotSpotStyleSeeder::class
+            HotSpotStyleSeeder::class,
+            ThemeSeeder::class,
         ]);
     }
 }

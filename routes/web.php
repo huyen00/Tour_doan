@@ -58,7 +58,7 @@ if ($config->getAcl()) {
 */
 
 Route::get('/', function () {
-    return redirect('/login');
+    return redirect('/index');
 });
 Route::get('/test', function () {
     return Inertia::render('Index');
@@ -162,8 +162,8 @@ Route::group([
 Route::middleware(['auth'])->group(
     function () use ($middleware, $config) {
 
-        Route::prefix('page')->as('page.')->group(function(){
-            Route::get('',[PageController::class, 'index'])->name('index');
+        Route::prefix('page')->as('page.')->group(function () {
+            Route::get('', [PageController::class, 'index'])->name('index');
         });
 
         Route::prefix('permissions')->as('permissions.')->group(function () {
@@ -199,7 +199,7 @@ Route::middleware(['auth'])->group(
 
         Route::prefix('tours')->as('tour.')->group(function () {
 
-            Route::get('cloneTour/{id}', [TourController::class,'cloneTOur'])->name('clone');
+            Route::get('cloneTour/{id}', [TourController::class, 'cloneTOur'])->name('clone');
             Route::get('', [TourController::class, 'index'])->name('index');
             Route::post('', [TourController::class, 'store'])->name('store');
             Route::get('content/{id}', [TourController::class, 'content'])->name('content');
@@ -265,7 +265,6 @@ Route::middleware(['auth'])->group(
                 Route::delete('/delete', [HotspotController::class, 'delete'])->name('delete');
                 Route::prefix('/action')->as('action.')->group(function () {
                     Route::post('/update', [HotspotController::class, 'saveDataAction'])->name('update');
-
                 });
                 Route::post('/clearAction', [HotspotController::class, 'clearAction'])->name('clearAction');
             });
@@ -292,13 +291,11 @@ Route::middleware(['auth'])->group(
                     Route::get('', [ImageController::class, 'index'])->name('index');
                     Route::post('', [ImageController::class, 'store'])->name('store');
                     Route::post('/update', [ImageController::class, 'update'])->name('update');
-
                 });
                 Route::prefix('/{slug}/voices')->as('voices.')->group(function () {
                     Route::get('', [VoiceInforController::class, 'index'])->name('index');
                     Route::post('', [VoiceInforController::class, 'store'])->name('store');
                     Route::post('/update', [VoiceInforController::class, 'update'])->name('update');
-
                 });
                 Route::delete('image/delete', [ImageController::class, 'delete'])->name('image.delete');
                 Route::delete('voice/delete', [VoiceInforController::class, 'delete'])->name('voice.delete');
@@ -316,7 +313,6 @@ Route::middleware(['auth'])->group(
             Route::post('imagePrority', [ImageController::class, 'priorityImage'])->name('image.priority');
             Route::post('inforPrority', [InforTourController::class, 'inforPrority'])->name('infor.priority');
             Route::post('soundPrority', [SoundController::class, 'prioritySound'])->name('sound.priority');
-
         });
         Route::prefix('category-hotspot')->as('category-hotspot.')->group(function () {
             Route::get('', [CategoryHotspotController::class, 'index'])->name('index');
@@ -339,14 +335,20 @@ Route::middleware(['auth'])->group(
         Route::prefix('languages')->as('language.')->group(function () {
             Route::get('', [LanguageController::class, 'index'])->name('index');
             Route::post('update', [LanguageController::class, 'update'])->name('update');
-
         });
     }
 );
-Route::group([
-    'middleware' => ['lang'],
-    'prefix'     => $config->getRoutePrefix(),
-],
+
+
+
+
+
+
+Route::group(
+    [
+        'middleware' => ['lang'],
+        'prefix'     => $config->getRoutePrefix(),
+    ],
     function () {
         // Route::get('/{code}', [readXmlController::class, 'preview'])
         //     ->name('tour360.index');
@@ -360,8 +362,9 @@ Route::get('language/{language}', function ($language) {
 
     return redirect()->back();
 })->name('language');
-Route::get('tour/{code}',[TourController::class, 'tour'])->name('tour.preview');
+Route::get('tour/{code}', [TourController::class, 'tour'])->name('tour.preview');
 Route::get('tour/{code}/map', [readXmlController::class, 'map_preview'])
-            ->name('tour360.map_preview');
-Route::get('tour/{code}/hotspot/{scene}',[TourController::class, 'ListHotSpot'])->name('tour.hotspot');
+    ->name('tour360.map_preview');
+Route::get('tour/{code}/hotspot/{scene}', [TourController::class, 'ListHotSpot'])->name('tour.hotspot');
 require __DIR__ . '/auth.php';
+require __DIR__ . '/landingpage.php';
