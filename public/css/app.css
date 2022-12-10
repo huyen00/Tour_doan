@@ -697,6 +697,8 @@ video {
   margin-top: 2.5rem;
 }.-mb-px {
   margin-bottom: -1px;
+}.mt-7 {
+  margin-top: 1.75rem;
 }.box-border {
   box-sizing: border-box;
 }.block {
@@ -781,6 +783,10 @@ video {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+}.w-24 {
+  width: 6rem;
+}.w-40 {
+  width: 10rem;
 }.min-w-full {
   min-width: 100%;
 }.max-w-xl {

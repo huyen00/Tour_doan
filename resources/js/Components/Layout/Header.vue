@@ -2,7 +2,7 @@
   <header class="main-header">
     <span class="logo-mini">
       <a href="/">
-       
+       <!-- <img src="assets/img/logodh.png" class="w-full" alt=""> -->
       </a>
     </span>
     <!-- Header Navbar -->

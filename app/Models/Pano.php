@@ -11,7 +11,7 @@ class Pano extends Model
 {
     use HasFactory;
     protected $table = 'panos';
-    protected $fillable = ['id', 'name', 'thumb_img', 'id_thumb', 'tour_id', 'id_priority', 'category_pano_id', 'created_at', 'updated_at'];
+    protected $fillable = ['id', 'name', 'thumb_img', 'id_thumb','path_onstart', 'tour_id', 'id_priority', 'category_pano_id', 'created_at', 'updated_at'];
 
     public function tour()
     {
