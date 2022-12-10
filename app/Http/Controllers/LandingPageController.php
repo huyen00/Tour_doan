@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\CategoryNew;
+use App\Models\Language;
 use App\Models\News;
 use App\Models\Page;
 use Illuminate\Http\Request;
@@ -19,5 +21,26 @@ class LandingPageController extends Controller
         $last_new  = News::with('languages', 'category', 'tags')->orderBy('created_at', 'desc')->take(5)->get();
      
         return view('landingpage.index', compact('page','last_new'));
+    }
+
+    public function chitiet_tintuc(Request $request, $slug)
+    {
+        $page = Page::with(['sections.page_contents.images',  'sections.theme','sections'=>function($q){
+            $q->where('active',1);
+        }])->findOrFail(1);
+        $number_all = News::count();
+        $theloais = CategoryNew::withCount('news')->get();
+
+        $language = Language::where('en', $slug)->orWhere('vn', $slug)->first();
+        if ($language) {
+            $tintuc = News::with('category', 'tags')->findOrFail($language->languageable->id);
+
+            $tintuc_lienquan =  News::with('category', 'tags')->where('category_id', $tintuc->category->id)->where('title', '!=', $tintuc->title)->take(3)->get();
+            if ($tintuc) {
+                return view('landingpage.new_detail', compact('tintuc', 'tintuc_lienquan', 'number_all', 'theloais'));
+            }
+        } else {
+            return view('landingpage.not-found');
+        }
     }
 }

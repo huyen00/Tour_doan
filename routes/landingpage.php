@@ -125,3 +125,8 @@ Route::middleware(['auth', 'verified'])->group(
     }
 );
 Route::get('index', LandingPageController::class);
+
+Route::get(
+    'new/{slug}',
+    [LandingPageController::class, 'chitiet_tintuc']
+)->name('new.detail');
