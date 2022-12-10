@@ -158,6 +158,7 @@ export default {
 }
 .login-section{
     min-width: 600px !important;
+    position: absolute;
 }
 .text-label {
     font-size: 2rem;

@@ -36,21 +36,11 @@
                     <i class="fa-solid fa-plus icon_open" id="icon_1"></i>
                 </div>
                 <div class="text_catagory">
-                    <span>Chùa Tam Chúc</span>
+                    <span>Toàn cảnh</span>
                 </div>
             </div>
 
-            <div class="content_catagory" id="content_1">
-                <div class="title_content_catagory">
-                    <span>Chùa Tam Chúc</span>
-                </div>
-                <div class="title_content_catagory">
-                    <span>Chùa Tam Chúc</span>
-                </div>
-                <div class="title_content_catagory">
-                    <span>Chùa Tam Chúc</span>
-                </div>
-            </div>
+            
         </div>
         <div class="list_title">
             <div class="title_catagory" id="title_2" >
@@ -58,19 +48,19 @@
                     <i class="fa-solid fa-plus icon_open" id="icon_2"></i>
                 </div>
                 <div class="text_catagory">
-                    <span>Điện Tam Thế</span>
+                    <span>Khu Tòa Nhà A2</span>
                 </div>
             </div>
 
             <div class="content_catagory" id="content_2">
                 <div class="title_content_catagory">
-                    <span>Chùa Tam Chúc</span>
+                    <span>Hội Trường T35</span>
                 </div>
                 <div class="title_content_catagory">
-                    <span>Chùa Tam Chúc</span>
+                    <span>Phòng Học</span>
                 </div>
                 <div class="title_content_catagory">
-                    <span>Chùa Tam Chúc</span>
+                    <span>Phòng Thí Nghiệm</span>
                 </div>
             </div>
         </div>
@@ -80,19 +70,19 @@
                     <i class="fa-solid fa-plus icon_open" id="icon_3"></i>
                 </div>
                 <div class="text_catagory">
-                    <span>Điện Quán Âm</span>
+                    <span>Khu Nhà Thể Chất</span>
                 </div>
             </div>
 
             <div class="content_catagory" id="content_3">
                 <div class="title_content_catagory">
-                    <span>Chùa Tam Chúc</span>
+                    <span>Sân bóng</span>
                 </div>
                 <div class="title_content_catagory">
-                    <span>Chùa Tam Chúc</span>
+                    <span>Bể Bơi</span>
                 </div>
                 <div class="title_content_catagory">
-                    <span>Chùa Tam Chúc</span>
+                    <span>Sân Bóng Rổ</span>
                 </div>
             </div>
         </div>

@@ -78,9 +78,11 @@
 		</li>
 	
 		<div class="change_sound" id="change_sound">
+		<!-- <?php $__currentLoopData = $tour->sounds; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $sounds): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?> -->
 			<li class="item_sound" id="sound1">
 				<span>Nhạc nền 1</span>
 			</li>
+			<!-- <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?> -->
 			<li class="item_sound" id="sound2">
 				<span>Nhạc nền 2</span>
 			</li>
