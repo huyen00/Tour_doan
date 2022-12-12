@@ -1,16 +1,16 @@
 <header class="header_page">
     <div class="container">
-        {{-- <div class="row logo_page"> --}}
+        
             <div class="clearfix">
                 <a href="" style="float:left">
                     <img src="landingpage/assets/image/logo.png" class="logo_dh img-fluid" alt="">
                 </a>
                 <div class="login_btn" style="float:right; margin-top:2rem; font-weight:600">
-                    <a href="{{route('login')}}" style="color: #000 !important;">Đăng Nhập</a>
+                    <a href="<?php echo e(route('login')); ?>" style="color: #000 !important;">Đăng Nhập</a>
                 </div>
             </div>
            
-        {{-- </div> --}}
+        
     </div>
     <div class="row">
         <div class="menu_page">
@@ -241,4 +241,4 @@
             </ul>
         </div>
     </div>
-</header>
+</header><?php /**PATH C:\xampp\htdocs\Tour_doan\resources\views/landingpage/header.blade.php ENDPATH**/ ?>
