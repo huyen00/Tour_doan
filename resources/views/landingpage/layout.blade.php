@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Đồ án Tốt Nghiệp</title>
+    <title>Đồ án Tốt Nghiệp 1</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <base href="{{ asset('') }}">
