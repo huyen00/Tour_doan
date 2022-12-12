@@ -10,22 +10,7 @@
                     <span><?php echo __($tintuc->content); ?></span>
                 </div>
                 <div class="categori_item_news">
-                    <div class="categori_list">
-                        <h5>Categori</h5>
-                        <ul style="padding-left: 0px; top: 160px;">
-                            <li class="link_news">
-                                <a href="">All</a>
-                                <span class="number_news">(<?php echo e($number_all); ?>)</span>
-                            </li>
-                            <?php $__currentLoopData = $theloais; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $theloai): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                            <li class="link_news">
-                                    <a href=""><?php echo e($theloai->name); ?></a>
-                                    <span class="number_news">(<?php echo e($theloai->news_count); ?>)</span>
-                                </li>
-                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                        
-                        </ul>
-                    </div>
+                
                    
                     <div class="featured_news_list">
                         <h5>Featured News</h5>

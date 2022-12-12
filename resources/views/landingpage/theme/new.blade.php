@@ -24,6 +24,6 @@
        
     </div>
     <div class="see_more">
-        <a href="page/tintuc.html" class="linh_see_more">Xem tin mới nhất</a>
+        <a href="/tintuc" class="linh_see_more">Xem tin mới nhất</a>
     </div>
 </div>

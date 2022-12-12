@@ -6,6 +6,7 @@ use App\Models\CategoryNew;
 use App\Models\Language;
 use App\Models\News;
 use App\Models\Page;
+use App\Models\PageContent;
 use Illuminate\Http\Request;
 
 class LandingPageController extends Controller
@@ -42,5 +43,31 @@ class LandingPageController extends Controller
         } else {
             return view('landingpage.not-found');
         }
+    }
+
+    public function post_detail(Request $request, $slug)
+    {
+        $page = Page::with(['sections.page_contents.images',  'sections.theme','sections'=>function($q){
+            $q->where('active',1);
+        }])->findOrFail(1);
+
+
+        $language = Language::where('en', $slug)->orWhere('vn', $slug)->first();
+        if ($language) {
+            $content = PageContent::findOrFail($language->languageable->id);
+
+            $content_lienquan =  PageContent::where('title', '!=', $content->title)->take(3)->get();
+            if ($content) {
+                return view('landingpage.post_detail', compact('content', 'content_lienquan'));
+            }
+        } else {
+            return view('landingpage.not-found');
+        }
+    }
+
+    public function tintuc(){
+        $news =  News::with('category', 'tags')->take(5)->get();
+        $outstanding_news = News::with('category', 'tags')->where('outstanding',1)->take(4)->get();
+        return view('landingpage.tintuc',compact('news','outstanding_news'));
     }
 }
