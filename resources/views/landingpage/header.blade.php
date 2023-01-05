@@ -1,10 +1,14 @@
 <header class="header_page">
     <div class="container">
-        <div class="row logo_page">
-            <a href="">
-                <img src="landingpage/assets/image/logo.png" class="logo_dh img-fluid" alt="">
-            </a>
-        </div>
+            <div class="clearfix">
+                <a href="" style="float:left">
+                    <img src="landingpage/assets/image/logo.png" class="logo_dh img-fluid" alt="">
+                </a>
+                <div class="login_btn" style="float:right; margin-top:2rem; font-weight:600">
+                    <a href="{{ route('login') }}" style="color: #000 !important;">Đăng Nhập</a>
+                </div>
+            </div>
+       
     </div>
     <div class="row">
         <div class="menu_page">
@@ -158,7 +162,7 @@
                     </ul>
                 </li>
                 <li class="item_menu">
-                    <a href="" class="link_menu">
+                    <a href="http://127.0.0.1:8000/tour/1dZGCVmNK5HNINei" class="link_menu">
                       Virtual Tour
                         <i class="fa-solid fa-angle-down"></i>
                     </a>

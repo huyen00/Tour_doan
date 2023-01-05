@@ -8,7 +8,7 @@
       data-toggle="modal"
       data-target="#exampleModal"
       @click="clickModal()"
-    >Create Permission</button>
+    >Create Roles</button>
 
     <!-- Modal -->
     <div

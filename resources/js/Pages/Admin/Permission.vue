@@ -9,7 +9,7 @@
       data-toggle="modal"
       data-target="#exampleModal"
       @click="clickModal()"
-    >Create News</button>
+    >Create Permissions</button>
 
     <!-- Modal -->
     <div
