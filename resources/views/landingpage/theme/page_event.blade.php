@@ -25,7 +25,7 @@
             
         </div>
         <div class="see_more mt-0">
-            <a href="" class="linh_see_more">Xem sự kiện mới nhất</a>
+            <a href="/tintuc" class="linh_see_more">Xem sự kiện mới nhất</a>
         </div>
     </div>
 </div>
