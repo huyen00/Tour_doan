@@ -1,0 +1,1923 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano version="1.20.9">
+
+    
+  <!-- Spot Style - call_out -->
+
+
+  <style name="Iconcall_out"
+         url="%FIRSTXML%/spots/hotspot_neutral_user_defaultpoint0.png"
+         visible="false"
+         edge="center"
+         onhover="onhoverIconcall_out"
+         onover="onoverIconcall_out"
+         onout="onoutIconcall_out"
+
+
+         />
+  <action name="onhoverIconcall_out">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoverIconcall_out">
+
+
+pauseautorotation(forcehotspot);
+
+  </action>
+  <action name="onoutIconcall_out">
+    hideTooltip();
+
+
+resumeautorotation(forcehotspot);
+
+  </action>
+
+
+
+    
+  <!-- Spot Style - callout_left -->
+
+
+  <style name="Iconcallout_left"
+         url="%FIRSTXML%/spots/hotspot_neutral_user_defaultpoint1.png"
+         visible="false"
+         edge="center"
+         onhover="onhoverIconcallout_left"
+         onover="onoverIconcallout_left"
+         onout="onoutIconcallout_left"
+
+
+         />
+  <action name="onhoverIconcallout_left">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoverIconcallout_left">
+
+
+pauseautorotation(forcehotspot);
+
+  </action>
+  <action name="onoutIconcallout_left">
+    hideTooltip();
+
+
+resumeautorotation(forcehotspot);
+
+  </action>
+
+
+
+    
+  <!-- Spot Style - callout_top -->
+
+
+  <style name="Iconcallout_top"
+         url="%FIRSTXML%/spots/hotspot_neutral_user_defaultpoint2.png"
+         visible="false"
+         edge="center"
+         onhover="onhoverIconcallout_top"
+         onover="onoverIconcallout_top"
+         onout="onoutIconcallout_top"
+
+
+         />
+  <action name="onhoverIconcallout_top">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoverIconcallout_top">
+
+
+pauseautorotation(forcehotspot);
+
+  </action>
+  <action name="onoutIconcallout_top">
+    hideTooltip();
+
+
+resumeautorotation(forcehotspot);
+
+  </action>
+
+
+
+    
+  <!-- Spot Style - callout_bottom -->
+
+
+  <style name="Iconcallout_bottom"
+         url="%FIRSTXML%/spots/hotspot_neutral_user_defaultpoint3.png"
+         visible="false"
+         edge="center"
+         onhover="onhoverIconcallout_bottom"
+         onover="onoverIconcallout_bottom"
+         onout="onoutIconcallout_bottom"
+
+
+         />
+  <action name="onhoverIconcallout_bottom">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoverIconcallout_bottom">
+
+
+pauseautorotation(forcehotspot);
+
+  </action>
+  <action name="onoutIconcallout_bottom">
+    hideTooltip();
+
+
+resumeautorotation(forcehotspot);
+
+  </action>
+
+
+
+    
+  <!-- Spot Style - callout_square -->
+
+
+  <style name="Iconcallout_square"
+         url="%FIRSTXML%/spots/hotspot_neutral_user_defaultpoint4.png"
+         visible="false"
+         edge="center"
+         onhover="onhoverIconcallout_square"
+         onover="onoverIconcallout_square"
+         onout="onoutIconcallout_square"
+
+
+         />
+  <action name="onhoverIconcallout_square">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoverIconcallout_square">
+
+
+pauseautorotation(forcehotspot);
+
+  </action>
+  <action name="onoutIconcallout_square">
+    hideTooltip();
+
+
+resumeautorotation(forcehotspot);
+
+  </action>
+
+
+
+    
+  <!-- Spot Style - callout_round -->
+
+
+  <style name="Iconcallout_round"
+         url="%FIRSTXML%/spots/hotspot_neutral_user_defaultpoint5.png"
+         visible="false"
+         edge="center"
+         onhover="onhoverIconcallout_round"
+         onover="onoverIconcallout_round"
+         onout="onoutIconcallout_round"
+
+
+         />
+  <action name="onhoverIconcallout_round">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoverIconcallout_round">
+
+
+pauseautorotation(forcehotspot);
+
+  </action>
+  <action name="onoutIconcallout_round">
+    hideTooltip();
+
+
+resumeautorotation(forcehotspot);
+
+  </action>
+
+
+
+    
+  <!-- Spot Style - callout_sticky -->
+
+
+  <style name="Iconcallout_sticky"
+         url="%FIRSTXML%/spots/hotspot_neutral_user_defaultpoint6.png"
+         visible="false"
+         edge="center"
+         onhover="onhoverIconcallout_sticky"
+         onover="onoverIconcallout_sticky"
+         onout="onoutIconcallout_sticky"
+
+
+         />
+  <action name="onhoverIconcallout_sticky">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoverIconcallout_sticky">
+
+
+pauseautorotation(forcehotspot);
+
+  </action>
+  <action name="onoutIconcallout_sticky">
+    hideTooltip();
+
+
+resumeautorotation(forcehotspot);
+
+  </action>
+
+
+
+    
+  <!-- Spot Style - callout_pano -->
+
+
+  <style name="Iconcallout_pano"
+         url="%FIRSTXML%/spots/hotspot_neutral_user_defaultpoint7.png"
+         visible="false"
+         edge="center"
+         onhover="onhoverIconcallout_pano"
+         onover="onoverIconcallout_pano"
+         onout="onoutIconcallout_pano"
+
+
+         />
+  <action name="onhoverIconcallout_pano">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoverIconcallout_pano">
+
+
+pauseautorotation(forcehotspot);
+
+  </action>
+  <action name="onoutIconcallout_pano">
+    hideTooltip();
+
+
+resumeautorotation(forcehotspot);
+
+  </action>
+
+
+
+    
+  <!-- Spot Style - callout_fourlines -->
+
+
+  <style name="Iconcallout_fourlines"
+         url="%FIRSTXML%/spots/hotspot_neutral_user_defaultpoint8.png"
+         visible="false"
+         edge="center"
+         onhover="onhoverIconcallout_fourlines"
+         onover="onoverIconcallout_fourlines"
+         onout="onoutIconcallout_fourlines"
+
+
+         />
+  <action name="onhoverIconcallout_fourlines">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoverIconcallout_fourlines">
+
+
+pauseautorotation(forcehotspot);
+
+  </action>
+  <action name="onoutIconcallout_fourlines">
+    hideTooltip();
+
+
+resumeautorotation(forcehotspot);
+
+  </action>
+
+
+
+<!-- 360Images Call Out Titles Plugin -->
+
+
+
+
+<include url="%FIRSTXML%/graphics/callouttitles.xml"/>
+<callout author_context="true"/>
+<style
+	distancepopup="2"
+	distancepopup.tablet="3"
+	distancepopup.mobile="5"
+	visible="false"
+	callout_type="centerscreen"
+	callout_type.mobile="centerscreen"
+	callout_type.tablet="centerscreen"
+	name="call_out"
+	type="container" 
+	width="10" 
+	height="10" 
+	bgroundedge="10"
+	bgcolor="0xffffff" 
+	bgalpha="1.00"
+	bgborder="2 0xffffff 1.00"
+	toheight="200"
+	pumpitup="true"
+	pumpitup.mobile="true"
+	pumpitup.tablet="true"
+	rotate="90"
+	minfov="180"
+	maxfov="1"
+	minfov.mobile="180"
+	maxfov.mobile="1"
+	minfov.tablet="180"
+	maxfov.tablet="1"
+	onloaded="
+	txtadd(parentspot,'hotspot[',get(name),']');
+
+	txtadd(callout_pulse,'callout_pulse_',get(name));
+	addlayer(get(callout_pulse));
+	layer[get(callout_pulse)].loadstyle(call_out_titlescallout_pulse);
+	copy(layer[get(callout_pulse)].parent,parentspot);
+	
+	txtadd(callout_line,'callout_line_',get(name));
+	addlayer(get(callout_line));
+	copy(hotspot[get(name)].callout_line,callout_line);
+	layer[get(callout_line)].loadstyle(call_out_titlescallout_line);
+	copy(layer[get(callout_line)].parent,parentspot);
+	copy(layer[get(callout_line)].x,xpoint);
+	copy(layer[get(callout_line)].y,ypoint);
+	
+	txtadd(callout_line_vertical,'callout_line_vertical_',get(name));
+	addlayer(get(callout_line_vertical));
+	copy(hotspot[get(name)].callout_line_vertical,callout_line_vertical);
+	layer[get(callout_line_vertical)].loadstyle(call_out_titlescallout_line_vertical);
+	txtadd(parentlayer,'layer[',get(callout_line),']');
+	copy(layer[get(callout_line_vertical)].parent,parentlayer);
+
+	txtadd(callout_title,'callout_title_',get(name));
+	addlayer(get(callout_title));
+	copy(hotspot[get(name)].callout_title,callout_title);
+	layer[get(callout_title)].loadstyle(call_out_titlescallout_title);
+	txtadd(parentlayer2,'layer[',get(callout_line_vertical),']');
+	copy(layer[get(callout_title)].parent,parentlayer2);
+	getmessage(montitre, get(tooltip));
+	copy(layer[get(callout_title)].html,montitre);
+	
+	txtadd(callout_desc,'callout_desc_',get(name));
+	addlayer(get(callout_desc));
+	copy(hotspot[get(name)].callout_desc,callout_desc);
+	layer[get(callout_desc)].loadstyle(call_out_titlescallout_desc);
+	copy(layer[get(callout_desc)].parent,callout_title);
+	getmessage(madesc, get(descriptionid));
+	copy(layer[get(callout_desc)].html,madesc);
+	
+	if(hotspot[get(name)].onclick, copy(layer[get(callout_line_vertical)].onclick,hotspot[get(name)].onclick);set(layer[get(callout_line_vertical)].bgcapture,true));
+	if(hotspot[get(name)].callout_type == onuserclick, set(hotspot[get(name)].onclick,oncallout());set(hotspot[get(name)].bgcapture,true);set(hotspot[get(name)].handcursor,true));
+	if(hotspot[get(name)].callout_type == onover, set(hotspot[get(name)].onover,oncallout());set(hotspot[get(name)].onout,oncallin());set(hotspot[get(name)].bgcapture,true);set(hotspot[get(name)].handcursor,true));
+	set(events[testshotspots].onviewchanged,testhotspots();)
+ 	"
+	
+	oncallout="animate_callout(get(callout_line), get(callout_line_vertical), get(callout_title), get(callout_desc),get(toheight));"	
+	oncallin="animate_callin(get(callout_line), get(callout_line_vertical));"
+/>
+
+<style 
+	name="call_out_titlescallout_line" 
+	type="container" 
+	width="2" 
+	height="0"
+	bgalpha="1"
+	bgcolor="0xffffff"
+	align="top"
+	edge="bottom"
+/>
+
+<style 
+	name="call_out_titlescallout_line_vertical" 
+	type="container" 
+	width="0" 
+	height="0" 
+	bgcolor="0xffffff"
+	
+	rotate="-90"
+	
+		bgborder="0,0,0,2 0xffffff"
+		
+		
+		
+		
+		
+		edge="left"
+		align="top"
+		
+	 
+	
+	
+	maskchildren="true"
+/>
+
+<style 
+	name="call_out_titlescallout_title" 
+	type="text"
+	enabled="false"
+	align="topleft"
+	ox="10"  
+	bg="true"
+	bgcolor="0xb50000"
+	bgalpha="1"
+	bgborder="false"
+	css="color:#ffffff;font-family:Arial;font-size:30px;text-align:left;"
+ 
+	padding="5 10"
+/>
+
+<style 
+	name="call_out_titlescallout_desc" 
+	type="text"
+	enabled="false"
+	align="bottomleft"
+	edge="topleft"  
+	bg="false"
+	bgborder="false"
+	textshadow="1" textshadowrange="5.0" textshadowangle="45" textshadowcolor="0x000000" textshadowalpha="1"
+	css="color:#ffffff;font-family:Arial;font-size:20px;text-align:left;"
+ 
+	padding="5 0"
+/>
+
+
+<style name="call_out_titlescallout_pulse" type="container" align="center" 
+bg="false" 
+bgborder="3 0xffffff 1.00" 
+bgroundedge="calc:10 * 2"
+width="10" height="10" 
+onloaded="pulse(get(name))"/>
+
+<!-- 360Images Call Out Titles Plugin -->
+
+
+
+
+<callout author_context="true"/>
+<style
+	distancepopup="2"
+	distancepopup.tablet="3"
+	distancepopup.mobile="5"
+	visible="false"
+	callout_type="centerscreen"
+	callout_type.mobile="centerscreen"
+	callout_type.tablet="centerscreen"
+	name="callout_left"
+	type="container" 
+	width="10" 
+	height="10" 
+	bgroundedge="10"
+	bgcolor="0xffffff" 
+	bgalpha="1.00"
+	bgborder="2 0xffffff 1.00"
+	toheight="200"
+	pumpitup="true"
+	pumpitup.mobile="true"
+	pumpitup.tablet="true"
+	rotate="-45"
+	minfov="180"
+	maxfov="1"
+	minfov.mobile="180"
+	maxfov.mobile="1"
+	minfov.tablet="180"
+	maxfov.tablet="1"
+	onloaded="
+	txtadd(parentspot,'hotspot[',get(name),']');
+
+	txtadd(callout_pulse,'callout_pulse_',get(name));
+	addlayer(get(callout_pulse));
+	layer[get(callout_pulse)].loadstyle(call_out_titles1callout_pulse);
+	copy(layer[get(callout_pulse)].parent,parentspot);
+	
+	txtadd(callout_line,'callout_line_',get(name));
+	addlayer(get(callout_line));
+	copy(hotspot[get(name)].callout_line,callout_line);
+	layer[get(callout_line)].loadstyle(call_out_titles1callout_line);
+	copy(layer[get(callout_line)].parent,parentspot);
+	copy(layer[get(callout_line)].x,xpoint);
+	copy(layer[get(callout_line)].y,ypoint);
+	
+	txtadd(callout_line_vertical,'callout_line_vertical_',get(name));
+	addlayer(get(callout_line_vertical));
+	copy(hotspot[get(name)].callout_line_vertical,callout_line_vertical);
+	layer[get(callout_line_vertical)].loadstyle(call_out_titles1callout_line_vertical);
+	txtadd(parentlayer,'layer[',get(callout_line),']');
+	copy(layer[get(callout_line_vertical)].parent,parentlayer);
+
+	txtadd(callout_title,'callout_title_',get(name));
+	addlayer(get(callout_title));
+	copy(hotspot[get(name)].callout_title,callout_title);
+	layer[get(callout_title)].loadstyle(call_out_titles1callout_title);
+	txtadd(parentlayer2,'layer[',get(callout_line_vertical),']');
+	copy(layer[get(callout_title)].parent,parentlayer2);
+	getmessage(montitre, get(tooltip));
+	copy(layer[get(callout_title)].html,montitre);
+	
+	txtadd(callout_desc,'callout_desc_',get(name));
+	addlayer(get(callout_desc));
+	copy(hotspot[get(name)].callout_desc,callout_desc);
+	layer[get(callout_desc)].loadstyle(call_out_titles1callout_desc);
+	copy(layer[get(callout_desc)].parent,callout_title);
+	getmessage(madesc, get(descriptionid));
+	copy(layer[get(callout_desc)].html,madesc);
+	
+	if(hotspot[get(name)].onclick, copy(layer[get(callout_line_vertical)].onclick,hotspot[get(name)].onclick);set(layer[get(callout_line_vertical)].bgcapture,true));
+	if(hotspot[get(name)].callout_type == onuserclick, set(hotspot[get(name)].onclick,oncallout());set(hotspot[get(name)].bgcapture,true);set(hotspot[get(name)].handcursor,true));
+	if(hotspot[get(name)].callout_type == onover, set(hotspot[get(name)].onover,oncallout());set(hotspot[get(name)].onout,oncallin());set(hotspot[get(name)].bgcapture,true);set(hotspot[get(name)].handcursor,true));
+	set(events[testshotspots].onviewchanged,testhotspots();)
+ 	"
+	
+	oncallout="animate_callout(get(callout_line), get(callout_line_vertical), get(callout_title), get(callout_desc),get(toheight));"	
+	oncallin="animate_callin(get(callout_line), get(callout_line_vertical));"
+/>
+
+<style 
+	name="call_out_titles1callout_line" 
+	type="container" 
+	width="2" 
+	height="0"
+	bgalpha="1"
+	bgcolor="0xffffff"
+	align="top"
+	edge="bottom"
+/>
+
+<style 
+	name="call_out_titles1callout_line_vertical" 
+	type="container" 
+	width="0" 
+	height="0" 
+	bgcolor="0xffffff"
+	
+	
+	rotate="45"
+	
+	
+		bgborder="0,2,0,2 0xffffff"
+	
+	
+		
+		
+		edge="right"
+		align="top"
+	 
+	
+	
+	maskchildren="true"
+/>
+
+<style 
+	name="call_out_titles1callout_title" 
+	type="text"
+	enabled="false"
+	align="topright"
+	ox="-10"  
+	bg="true"
+	bgcolor="0xb50000"
+	bgalpha="1"
+	bgborder="false"
+	css="color:#ffffff;font-family:Arial;font-size:30px;text-align:right;"
+ 
+	padding="5 10"
+/>
+
+<style 
+	name="call_out_titles1callout_desc" 
+	type="text"
+	enabled="false"
+	align="bottomright"
+	edge="topright"  
+	bg="false"
+	bgborder="false"
+	css="color:#ffffff;font-family:Arial;font-size:20px;text-align:right;"
+ 
+	padding="5 0"
+/>
+
+
+<style name="call_out_titles1callout_pulse" type="container" align="center" 
+bg="false" 
+bgborder="3 0xffffff 1.00" 
+bgroundedge="calc:10 * 2"
+width="10" height="10" 
+onloaded="pulse(get(name))"/>
+
+<!-- 360Images Call Out Titles Plugin -->
+
+
+
+
+<callout author_context="true"/>
+<style
+	distancepopup="2"
+	distancepopup.tablet="3"
+	distancepopup.mobile="5"
+	visible="false"
+	callout_type="centerscreen"
+	callout_type.mobile="centerscreen"
+	callout_type.tablet="centerscreen"
+	name="callout_top"
+	type="container" 
+	width="10" 
+	height="10" 
+	bgroundedge="10"
+	bgcolor="0xffffff" 
+	bgalpha="1.00"
+	bgborder="2 0xffffff 1.00"
+	toheight="75"
+	pumpitup="true"
+	pumpitup.mobile="true"
+	pumpitup.tablet="true"
+	rotate="-0"
+	minfov="180"
+	maxfov="1"
+	minfov.mobile="180"
+	maxfov.mobile="1"
+	minfov.tablet="180"
+	maxfov.tablet="1"
+	onloaded="
+	txtadd(parentspot,'hotspot[',get(name),']');
+
+	txtadd(callout_pulse,'callout_pulse_',get(name));
+	addlayer(get(callout_pulse));
+	layer[get(callout_pulse)].loadstyle(call_out_titles2callout_pulse);
+	copy(layer[get(callout_pulse)].parent,parentspot);
+	
+	txtadd(callout_line,'callout_line_',get(name));
+	addlayer(get(callout_line));
+	copy(hotspot[get(name)].callout_line,callout_line);
+	layer[get(callout_line)].loadstyle(call_out_titles2callout_line);
+	copy(layer[get(callout_line)].parent,parentspot);
+	copy(layer[get(callout_line)].x,xpoint);
+	copy(layer[get(callout_line)].y,ypoint);
+	
+	txtadd(callout_line_vertical,'callout_line_vertical_',get(name));
+	addlayer(get(callout_line_vertical));
+	copy(hotspot[get(name)].callout_line_vertical,callout_line_vertical);
+	layer[get(callout_line_vertical)].loadstyle(call_out_titles2callout_line_vertical);
+	txtadd(parentlayer,'layer[',get(callout_line),']');
+	copy(layer[get(callout_line_vertical)].parent,parentlayer);
+
+	txtadd(callout_title,'callout_title_',get(name));
+	addlayer(get(callout_title));
+	copy(hotspot[get(name)].callout_title,callout_title);
+	layer[get(callout_title)].loadstyle(call_out_titles2callout_title);
+	txtadd(parentlayer2,'layer[',get(callout_line_vertical),']');
+	copy(layer[get(callout_title)].parent,parentlayer2);
+	getmessage(montitre, get(tooltip));
+	copy(layer[get(callout_title)].html,montitre);
+	
+	txtadd(callout_desc,'callout_desc_',get(name));
+	addlayer(get(callout_desc));
+	copy(hotspot[get(name)].callout_desc,callout_desc);
+	layer[get(callout_desc)].loadstyle(call_out_titles2callout_desc);
+	copy(layer[get(callout_desc)].parent,callout_title);
+	getmessage(madesc, get(descriptionid));
+	copy(layer[get(callout_desc)].html,madesc);
+	
+	if(hotspot[get(name)].onclick, copy(layer[get(callout_line_vertical)].onclick,hotspot[get(name)].onclick);set(layer[get(callout_line_vertical)].bgcapture,true));
+	if(hotspot[get(name)].callout_type == onuserclick, set(hotspot[get(name)].onclick,oncallout());set(hotspot[get(name)].bgcapture,true);set(hotspot[get(name)].handcursor,true));
+	if(hotspot[get(name)].callout_type == onover, set(hotspot[get(name)].onover,oncallout());set(hotspot[get(name)].onout,oncallin());set(hotspot[get(name)].bgcapture,true);set(hotspot[get(name)].handcursor,true));
+	set(events[testshotspots].onviewchanged,testhotspots();)
+ 	"
+	
+	oncallout="animate_callout(get(callout_line), get(callout_line_vertical), get(callout_title), get(callout_desc),get(toheight));"	
+	oncallin="animate_callin(get(callout_line), get(callout_line_vertical));"
+/>
+
+<style 
+	name="call_out_titles2callout_line" 
+	type="container" 
+	width="2" 
+	height="0"
+	bgalpha="1"
+	bgcolor="0xffffff"
+	align="top"
+	edge="bottom"
+/>
+
+<style 
+	name="call_out_titles2callout_line_vertical" 
+	type="container" 
+	width="0" 
+	height="0" 
+	bgcolor="0xffffff"
+	
+	
+	rotate="0"
+	
+		bgborder="0,2,0,0 0xffffff"
+	
+	
+	
+		edge="bottomright"
+		align="topleft"
+	 
+	
+	
+	maskchildren="true"
+/>
+
+<style 
+	name="call_out_titles2callout_title" 
+	type="text"
+	enabled="false"
+	align="topright"
+	ox="-10"  
+	bg="true"
+	bgcolor="0xb50000"
+	bgalpha="1"
+	bgborder="false"
+	css="color:#ffffff;font-family:Arial;font-size:30px;text-align:right;"
+ 
+	padding="5 10"
+/>
+
+<style 
+	name="call_out_titles2callout_desc" 
+	type="text"
+	enabled="false"
+	align="bottomright"
+	edge="topright"  
+	bg="false"
+	bgborder="false"
+	textshadow="1" textshadowrange="5.0" textshadowangle="45" textshadowcolor="0x000000" textshadowalpha="1"
+	css="color:#ffffff;font-family:Arial;font-size:20px;text-align:right;"
+ 
+	padding="5 0"
+/>
+
+
+<style name="call_out_titles2callout_pulse" type="container" align="center" 
+bg="false" 
+bgborder="3 0xffffff 1.00" 
+bgroundedge="calc:10 * 2"
+width="10" height="10" 
+onloaded="pulse(get(name))"/>
+
+<!-- 360Images Call Out Titles Plugin -->
+
+
+
+
+<callout author_context="true"/>
+<style
+	distancepopup="2"
+	distancepopup.tablet="3"
+	distancepopup.mobile="5"
+	visible="false"
+	callout_type="centerscreen"
+	callout_type.mobile="centerscreen"
+	callout_type.tablet="centerscreen"
+	name="callout_bottom"
+	type="container" 
+	width="10" 
+	height="10" 
+	bgroundedge="10"
+	bgcolor="0xffffff" 
+	bgalpha="1.00"
+	bgborder="2 0xffffff 1.00"
+	toheight="75"
+	pumpitup="true"
+	pumpitup.mobile="true"
+	pumpitup.tablet="true"
+	rotate="180"
+	minfov="180"
+	maxfov="1"
+	minfov.mobile="180"
+	maxfov.mobile="1"
+	minfov.tablet="180"
+	maxfov.tablet="1"
+	onloaded="
+	txtadd(parentspot,'hotspot[',get(name),']');
+
+	txtadd(callout_pulse,'callout_pulse_',get(name));
+	addlayer(get(callout_pulse));
+	layer[get(callout_pulse)].loadstyle(call_out_titles3callout_pulse);
+	copy(layer[get(callout_pulse)].parent,parentspot);
+	
+	txtadd(callout_line,'callout_line_',get(name));
+	addlayer(get(callout_line));
+	copy(hotspot[get(name)].callout_line,callout_line);
+	layer[get(callout_line)].loadstyle(call_out_titles3callout_line);
+	copy(layer[get(callout_line)].parent,parentspot);
+	copy(layer[get(callout_line)].x,xpoint);
+	copy(layer[get(callout_line)].y,ypoint);
+	
+	txtadd(callout_line_vertical,'callout_line_vertical_',get(name));
+	addlayer(get(callout_line_vertical));
+	copy(hotspot[get(name)].callout_line_vertical,callout_line_vertical);
+	layer[get(callout_line_vertical)].loadstyle(call_out_titles3callout_line_vertical);
+	txtadd(parentlayer,'layer[',get(callout_line),']');
+	copy(layer[get(callout_line_vertical)].parent,parentlayer);
+
+	txtadd(callout_title,'callout_title_',get(name));
+	addlayer(get(callout_title));
+	copy(hotspot[get(name)].callout_title,callout_title);
+	layer[get(callout_title)].loadstyle(call_out_titles3callout_title);
+	txtadd(parentlayer2,'layer[',get(callout_line_vertical),']');
+	copy(layer[get(callout_title)].parent,parentlayer2);
+	getmessage(montitre, get(tooltip));
+	copy(layer[get(callout_title)].html,montitre);
+	
+	txtadd(callout_desc,'callout_desc_',get(name));
+	addlayer(get(callout_desc));
+	copy(hotspot[get(name)].callout_desc,callout_desc);
+	layer[get(callout_desc)].loadstyle(call_out_titles3callout_desc);
+	copy(layer[get(callout_desc)].parent,callout_title);
+	getmessage(madesc, get(descriptionid));
+	copy(layer[get(callout_desc)].html,madesc);
+	
+	if(hotspot[get(name)].onclick, copy(layer[get(callout_line_vertical)].onclick,hotspot[get(name)].onclick);set(layer[get(callout_line_vertical)].bgcapture,true));
+	if(hotspot[get(name)].callout_type == onuserclick, set(hotspot[get(name)].onclick,oncallout());set(hotspot[get(name)].bgcapture,true);set(hotspot[get(name)].handcursor,true));
+	if(hotspot[get(name)].callout_type == onover, set(hotspot[get(name)].onover,oncallout());set(hotspot[get(name)].onout,oncallin());set(hotspot[get(name)].bgcapture,true);set(hotspot[get(name)].handcursor,true));
+	set(events[testshotspots].onviewchanged,testhotspots();)
+ 	"
+	
+	oncallout="animate_callout(get(callout_line), get(callout_line_vertical), get(callout_title), get(callout_desc),get(toheight));"	
+	oncallin="animate_callin(get(callout_line), get(callout_line_vertical));"
+/>
+
+<style 
+	name="call_out_titles3callout_line" 
+	type="container" 
+	width="2" 
+	height="0"
+	bgalpha="1"
+	bgcolor="0xffffff"
+	align="top"
+	edge="bottom"
+/>
+
+<style 
+	name="call_out_titles3callout_line_vertical" 
+	type="container" 
+	width="0" 
+	height="0" 
+	bgcolor="0xffffff"
+	
+	rotate="-180"
+	
+		bgborder="0,0,0,2 0xffffff"
+		
+		
+		
+		
+		edge="topleft"
+		align="topright"
+		
+	 
+	
+	
+	maskchildren="true"
+/>
+
+<style 
+	name="call_out_titles3callout_title" 
+	type="text"
+	enabled="false"
+	align="topleft"
+	ox="10"  
+	bg="true"
+	bgcolor="0xb50000"
+	bgalpha="1"
+	bgborder="false"
+	css="color:#ffffff;font-family:Arial;font-size:30px;text-align:left;"
+ 
+	padding="5 10"
+/>
+
+<style 
+	name="call_out_titles3callout_desc" 
+	type="text"
+	enabled="false"
+	align="bottomleft"
+	edge="topleft"  
+	bg="false"
+	bgborder="false"
+	css="color:#ffffff;font-family:Arial;font-size:20px;text-align:left;"
+ 
+	padding="5 0"
+/>
+
+
+<style name="call_out_titles3callout_pulse" type="container" align="center" 
+bg="false" 
+bgborder="3 0xffffff 1.00" 
+bgroundedge="calc:10 * 2"
+width="10" height="10" 
+onloaded="pulse(get(name))"/>
+
+<!-- 360Images Call Out Titles Plugin -->
+
+
+
+
+<callout author_context="true"/>
+<style
+	distancepopup="2"
+	distancepopup.tablet="3"
+	distancepopup.mobile="5"
+	visible="false"
+	callout_type="centerscreen"
+	callout_type.mobile="centerscreen"
+	callout_type.tablet="centerscreen"
+	name="callout_square"
+	type="container" 
+	width="10" 
+	height="10" 
+	bgcolor="0xffffff" 
+	bgalpha="1.00"
+	bgborder="2 0xffffff 1.00"
+	toheight="200"
+	pumpitup="true"
+	pumpitup.mobile="true"
+	pumpitup.tablet="true"
+	rotate="-45"
+	minfov="180"
+	maxfov="1"
+	minfov.mobile="180"
+	maxfov.mobile="1"
+	minfov.tablet="180"
+	maxfov.tablet="1"
+	onloaded="
+	txtadd(parentspot,'hotspot[',get(name),']');
+
+	txtadd(callout_pulse,'callout_pulse_',get(name));
+	addlayer(get(callout_pulse));
+	layer[get(callout_pulse)].loadstyle(call_out_titles4callout_pulse);
+	copy(layer[get(callout_pulse)].parent,parentspot);
+	
+	txtadd(callout_line,'callout_line_',get(name));
+	addlayer(get(callout_line));
+	copy(hotspot[get(name)].callout_line,callout_line);
+	layer[get(callout_line)].loadstyle(call_out_titles4callout_line);
+	copy(layer[get(callout_line)].parent,parentspot);
+	copy(layer[get(callout_line)].x,xpoint);
+	copy(layer[get(callout_line)].y,ypoint);
+	
+	txtadd(callout_line_vertical,'callout_line_vertical_',get(name));
+	addlayer(get(callout_line_vertical));
+	copy(hotspot[get(name)].callout_line_vertical,callout_line_vertical);
+	layer[get(callout_line_vertical)].loadstyle(call_out_titles4callout_line_vertical);
+	txtadd(parentlayer,'layer[',get(callout_line),']');
+	copy(layer[get(callout_line_vertical)].parent,parentlayer);
+
+	txtadd(callout_title,'callout_title_',get(name));
+	addlayer(get(callout_title));
+	copy(hotspot[get(name)].callout_title,callout_title);
+	layer[get(callout_title)].loadstyle(call_out_titles4callout_title);
+	txtadd(parentlayer2,'layer[',get(callout_line_vertical),']');
+	copy(layer[get(callout_title)].parent,parentlayer2);
+	getmessage(montitre, get(tooltip));
+	copy(layer[get(callout_title)].html,montitre);
+	
+	txtadd(callout_desc,'callout_desc_',get(name));
+	addlayer(get(callout_desc));
+	copy(hotspot[get(name)].callout_desc,callout_desc);
+	layer[get(callout_desc)].loadstyle(call_out_titles4callout_desc);
+	copy(layer[get(callout_desc)].parent,callout_title);
+	getmessage(madesc, get(descriptionid));
+	copy(layer[get(callout_desc)].html,madesc);
+	
+	if(hotspot[get(name)].onclick, copy(layer[get(callout_line_vertical)].onclick,hotspot[get(name)].onclick);set(layer[get(callout_line_vertical)].bgcapture,true));
+	if(hotspot[get(name)].callout_type == onuserclick, set(hotspot[get(name)].onclick,oncallout());set(hotspot[get(name)].bgcapture,true);set(hotspot[get(name)].handcursor,true));
+	if(hotspot[get(name)].callout_type == onover, set(hotspot[get(name)].onover,oncallout());set(hotspot[get(name)].onout,oncallin());set(hotspot[get(name)].bgcapture,true);set(hotspot[get(name)].handcursor,true));
+	set(events[testshotspots].onviewchanged,testhotspots();)
+ 	"
+	
+	oncallout="animate_callout(get(callout_line), get(callout_line_vertical), get(callout_title), get(callout_desc),get(toheight));"	
+	oncallin="animate_callin(get(callout_line), get(callout_line_vertical));"
+/>
+
+<style 
+	name="call_out_titles4callout_line" 
+	type="container" 
+	width="2" 
+	height="0"
+	bgalpha="1"
+	bgcolor="0xffffff"
+	align="top"
+	edge="bottom"
+/>
+
+<style 
+	name="call_out_titles4callout_line_vertical" 
+	type="container" 
+	width="0" 
+	height="0" 
+	bgcolor="0xffffff"
+	
+	
+	rotate="45"
+	
+		bgborder="0,2,0,0 0xffffff"
+	
+	
+	
+		
+		
+		edge="right"
+		align="top"
+	 
+	
+	
+	maskchildren="true"
+/>
+
+<style 
+	name="call_out_titles4callout_title" 
+	type="text"
+	enabled="false"
+	align="topright"
+	ox="-10"  
+	bg="true"
+	bgcolor="0xb50000"
+	bgalpha="1"
+	bgborder="false"
+	css="color:#ffffff;font-family:Arial;font-size:30px;text-align:right;"
+ 
+	padding="5 10"
+/>
+
+<style 
+	name="call_out_titles4callout_desc" 
+	type="text"
+	enabled="false"
+	align="bottomright"
+	edge="topright"  
+	bg="false"
+	bgborder="false"
+	textshadow="1" textshadowrange="5.0" textshadowangle="45" textshadowcolor="0x000000" textshadowalpha="1"
+	css="color:#ffffff;font-family:Arial;font-size:20px;text-align:right;"
+ 
+	padding="5 0"
+/>
+
+
+<style name="call_out_titles4callout_pulse" type="container" align="center" 
+bg="false" 
+bgborder="3 0xffffff 1.00" 
+width="10" height="10" 
+onloaded="pulse(get(name))"/>
+
+<!-- 360Images Call Out Titles Plugin -->
+
+
+
+
+<callout author_context="true"/>
+<style
+	distancepopup="2"
+	distancepopup.tablet="3"
+	distancepopup.mobile="5"
+	visible="false"
+	callout_type="centerscreen"
+	callout_type.mobile="centerscreen"
+	callout_type.tablet="centerscreen"
+	name="callout_round"
+	type="container" 
+	width="50" 
+	height="50" 
+	bgroundedge="50"
+	bgcolor="0xffffff" 
+	bgalpha="0.00"
+	bgborder="2 0xffffff 1.00"
+	toheight="200"
+	pumpitup="true"
+	pumpitup.mobile="true"
+	pumpitup.tablet="true"
+	rotate="45"
+	minfov="180"
+	maxfov="1"
+	minfov.mobile="180"
+	maxfov.mobile="1"
+	minfov.tablet="180"
+	maxfov.tablet="1"
+	onloaded="
+	txtadd(parentspot,'hotspot[',get(name),']');
+
+	txtadd(callout_pulse,'callout_pulse_',get(name));
+	addlayer(get(callout_pulse));
+	layer[get(callout_pulse)].loadstyle(call_out_titles5callout_pulse);
+	copy(layer[get(callout_pulse)].parent,parentspot);
+	
+	txtadd(callout_line,'callout_line_',get(name));
+	addlayer(get(callout_line));
+	copy(hotspot[get(name)].callout_line,callout_line);
+	layer[get(callout_line)].loadstyle(call_out_titles5callout_line);
+	copy(layer[get(callout_line)].parent,parentspot);
+	copy(layer[get(callout_line)].x,xpoint);
+	copy(layer[get(callout_line)].y,ypoint);
+	
+	txtadd(callout_line_vertical,'callout_line_vertical_',get(name));
+	addlayer(get(callout_line_vertical));
+	copy(hotspot[get(name)].callout_line_vertical,callout_line_vertical);
+	layer[get(callout_line_vertical)].loadstyle(call_out_titles5callout_line_vertical);
+	txtadd(parentlayer,'layer[',get(callout_line),']');
+	copy(layer[get(callout_line_vertical)].parent,parentlayer);
+
+	txtadd(callout_title,'callout_title_',get(name));
+	addlayer(get(callout_title));
+	copy(hotspot[get(name)].callout_title,callout_title);
+	layer[get(callout_title)].loadstyle(call_out_titles5callout_title);
+	txtadd(parentlayer2,'layer[',get(callout_line_vertical),']');
+	copy(layer[get(callout_title)].parent,parentlayer2);
+	getmessage(montitre, get(tooltip));
+	copy(layer[get(callout_title)].html,montitre);
+	
+	txtadd(callout_desc,'callout_desc_',get(name));
+	addlayer(get(callout_desc));
+	copy(hotspot[get(name)].callout_desc,callout_desc);
+	layer[get(callout_desc)].loadstyle(call_out_titles5callout_desc);
+	copy(layer[get(callout_desc)].parent,callout_title);
+	getmessage(madesc, get(descriptionid));
+	copy(layer[get(callout_desc)].html,madesc);
+	
+	if(hotspot[get(name)].onclick, copy(layer[get(callout_line_vertical)].onclick,hotspot[get(name)].onclick);set(layer[get(callout_line_vertical)].bgcapture,true));
+	if(hotspot[get(name)].callout_type == onuserclick, set(hotspot[get(name)].onclick,oncallout());set(hotspot[get(name)].bgcapture,true);set(hotspot[get(name)].handcursor,true));
+	if(hotspot[get(name)].callout_type == onover, set(hotspot[get(name)].onover,oncallout());set(hotspot[get(name)].onout,oncallin());set(hotspot[get(name)].bgcapture,true);set(hotspot[get(name)].handcursor,true));
+	set(events[testshotspots].onviewchanged,testhotspots();)
+ 	"
+	
+	oncallout="animate_callout(get(callout_line), get(callout_line_vertical), get(callout_title), get(callout_desc),get(toheight));"	
+	oncallin="animate_callin(get(callout_line), get(callout_line_vertical));"
+/>
+
+<style 
+	name="call_out_titles5callout_line" 
+	type="container" 
+	width="2" 
+	height="0"
+	bgalpha="1"
+	bgcolor="0xffffff"
+	align="top"
+	edge="bottom"
+/>
+
+<style 
+	name="call_out_titles5callout_line_vertical" 
+	type="container" 
+	width="0" 
+	height="0" 
+	bgcolor="0xffffff"
+	
+	rotate="-45"
+	
+		bgborder="0,0,0,2 0xffffff"
+		
+		
+		
+		
+		
+		edge="left"
+		align="top"
+		
+	 
+	
+	
+	maskchildren="true"
+/>
+
+<style 
+	name="call_out_titles5callout_title" 
+	type="text"
+	enabled="false"
+	align="topleft"
+	ox="10"  
+	bg="true"
+	bgcolor="0xb50000"
+	bgalpha="1"
+	bgborder="false"
+	css="color:#ffffff;font-family:Arial;font-size:30px;text-align:left;"
+ 
+	padding="5 10"
+/>
+
+<style 
+	name="call_out_titles5callout_desc" 
+	type="text"
+	enabled="false"
+	align="bottomleft"
+	edge="topleft"  
+	bg="false"
+	bgborder="false"
+	textshadow="1" textshadowrange="5.0" textshadowangle="45" textshadowcolor="0x000000" textshadowalpha="1"
+	css="color:#ffffff;font-family:Arial;font-size:20px;text-align:left;"
+ 
+	padding="5 0"
+/>
+
+
+<style name="call_out_titles5callout_pulse" type="container" align="center" 
+bg="false" 
+bgborder="3 0xffffff 1.00" 
+bgroundedge="calc:50 * 2"
+width="50" height="50" 
+onloaded="pulse(get(name))"/>
+
+<!-- 360Images Call Out Titles Plugin -->
+
+
+
+
+<callout author_context="true"/>
+<style
+	distancepopup="2"
+	distancepopup.tablet="3"
+	distancepopup.mobile="5"
+	visible="false"
+	callout_type="centerscreen"
+	callout_type.mobile="centerscreen"
+	callout_type.tablet="centerscreen"
+	name="callout_sticky"
+	type="container" 
+	width="10" 
+	height="10" 
+	bgroundedge="10"
+	bgcolor="0xffffff" 
+	bgalpha="1.00"
+	bgborder="2 0xffffff 1.00"
+	toheight="200"
+	pumpitup="false"
+	pumpitup.mobile="true"
+	pumpitup.tablet="true"
+	rotate="45"
+	minfov="180"
+	maxfov="1"
+	minfov.mobile="180"
+	maxfov.mobile="1"
+	minfov.tablet="180"
+	maxfov.tablet="1"
+	onloaded="
+	txtadd(parentspot,'hotspot[',get(name),']');
+
+	txtadd(callout_pulse,'callout_pulse_',get(name));
+	addlayer(get(callout_pulse));
+	layer[get(callout_pulse)].loadstyle(call_out_titles6callout_pulse);
+	copy(layer[get(callout_pulse)].parent,parentspot);
+	
+	txtadd(callout_line,'callout_line_',get(name));
+	addlayer(get(callout_line));
+	copy(hotspot[get(name)].callout_line,callout_line);
+	layer[get(callout_line)].loadstyle(call_out_titles6callout_line);
+	copy(layer[get(callout_line)].parent,parentspot);
+	copy(layer[get(callout_line)].x,xpoint);
+	copy(layer[get(callout_line)].y,ypoint);
+	
+	txtadd(callout_line_vertical,'callout_line_vertical_',get(name));
+	addlayer(get(callout_line_vertical));
+	copy(hotspot[get(name)].callout_line_vertical,callout_line_vertical);
+	layer[get(callout_line_vertical)].loadstyle(call_out_titles6callout_line_vertical);
+	txtadd(parentlayer,'layer[',get(callout_line),']');
+	copy(layer[get(callout_line_vertical)].parent,parentlayer);
+
+	txtadd(callout_title,'callout_title_',get(name));
+	addlayer(get(callout_title));
+	copy(hotspot[get(name)].callout_title,callout_title);
+	layer[get(callout_title)].loadstyle(call_out_titles6callout_title);
+	txtadd(parentlayer2,'layer[',get(callout_line_vertical),']');
+	copy(layer[get(callout_title)].parent,parentlayer2);
+	getmessage(montitre, get(tooltip));
+	copy(layer[get(callout_title)].html,montitre);
+	
+	txtadd(callout_desc,'callout_desc_',get(name));
+	addlayer(get(callout_desc));
+	copy(hotspot[get(name)].callout_desc,callout_desc);
+	layer[get(callout_desc)].loadstyle(call_out_titles6callout_desc);
+	copy(layer[get(callout_desc)].parent,callout_title);
+	getmessage(madesc, get(descriptionid));
+	copy(layer[get(callout_desc)].html,madesc);
+	
+	if(hotspot[get(name)].onclick, copy(layer[get(callout_line_vertical)].onclick,hotspot[get(name)].onclick);set(layer[get(callout_line_vertical)].bgcapture,true));
+	if(hotspot[get(name)].callout_type == onuserclick, set(hotspot[get(name)].onclick,oncallout());set(hotspot[get(name)].bgcapture,true);set(hotspot[get(name)].handcursor,true));
+	if(hotspot[get(name)].callout_type == onover, set(hotspot[get(name)].onover,oncallout());set(hotspot[get(name)].onout,oncallin());set(hotspot[get(name)].bgcapture,true);set(hotspot[get(name)].handcursor,true));
+	set(events[testshotspots].onviewchanged,testhotspots();)
+ 	"
+	
+	oncallout="animate_callout(get(callout_line), get(callout_line_vertical), get(callout_title), get(callout_desc),get(toheight));"	
+	oncallin="animate_callin(get(callout_line), get(callout_line_vertical));"
+/>
+
+<style 
+	name="call_out_titles6callout_line" 
+	type="container" 
+	width="2" 
+	height="0"
+	bgalpha="1"
+	bgcolor="0xffffff"
+	align="top"
+	edge="bottom"
+/>
+
+<style 
+	name="call_out_titles6callout_line_vertical" 
+	type="container" 
+	width="0" 
+	height="0" 
+	bgcolor="0xffffff"
+	
+	rotate="-45"
+	
+		bgborder="0,0,0,2 0xffffff"
+		
+		
+		
+		
+		
+		edge="left"
+		align="top"
+		
+	 
+	
+	
+	maskchildren="true"
+/>
+
+<style 
+	name="call_out_titles6callout_title" 
+	type="text"
+	enabled="false"
+	align="topleft"
+	ox="10"  
+	bg="true"
+	bgcolor="0xb50000"
+	bgalpha="1"
+	bgborder="false"
+	css="color:#ffffff;font-family:Arial;font-size:30px;text-align:left;"
+ 
+	padding="5 10"
+/>
+
+<style 
+	name="call_out_titles6callout_desc" 
+	type="text"
+	enabled="false"
+	align="bottomleft"
+	edge="topleft"  
+	bg="false"
+	bgborder="false"
+	textshadow="1" textshadowrange="5.0" textshadowangle="45" textshadowcolor="0x000000" textshadowalpha="1"
+	css="color:#ffffff;font-family:Arial;font-size:20px;text-align:left;"
+ 
+	padding="5 0"
+/>
+
+
+<style name="call_out_titles6callout_pulse" type="container" align="center" 
+bg="false" 
+bgborder="3 0xffffff 1.00" 
+bgroundedge="calc:10 * 2"
+width="10" height="10" 
+onloaded="pulse(get(name))"/>
+
+<!-- 360Images Call Out Titles Plugin -->
+
+
+
+
+<callout author_context="true"/>
+<style
+	distancepopup="2"
+	distancepopup.tablet="3"
+	distancepopup.mobile="5"
+	visible="false"
+	callout_type="centerscreen"
+	callout_type.mobile="centerscreen"
+	callout_type.tablet="centerscreen"
+	name="callout_pano"
+	type="container" 
+	width="10" 
+	height="10" 
+	bgroundedge="10"
+	bgcolor="0xffffff" 
+	bgalpha="1.00"
+	bgborder="2 0xffffff 1.00"
+	toheight="200"
+	pumpitup="true"
+	pumpitup.mobile="true"
+	pumpitup.tablet="true"
+	rotate="45"
+	minfov="180"
+	maxfov="1"
+	minfov.mobile="180"
+	maxfov.mobile="1"
+	minfov.tablet="180"
+	maxfov.tablet="1"
+	onloaded="
+	txtadd(parentspot,'hotspot[',get(name),']');
+
+	txtadd(callout_pulse,'callout_pulse_',get(name));
+	addlayer(get(callout_pulse));
+	layer[get(callout_pulse)].loadstyle(call_out_titles7callout_pulse);
+	copy(layer[get(callout_pulse)].parent,parentspot);
+	
+	txtadd(callout_line,'callout_line_',get(name));
+	addlayer(get(callout_line));
+	copy(hotspot[get(name)].callout_line,callout_line);
+	layer[get(callout_line)].loadstyle(call_out_titles7callout_line);
+	copy(layer[get(callout_line)].parent,parentspot);
+	copy(layer[get(callout_line)].x,xpoint);
+	copy(layer[get(callout_line)].y,ypoint);
+	
+	txtadd(callout_line_vertical,'callout_line_vertical_',get(name));
+	addlayer(get(callout_line_vertical));
+	copy(hotspot[get(name)].callout_line_vertical,callout_line_vertical);
+	layer[get(callout_line_vertical)].loadstyle(call_out_titles7callout_line_vertical);
+	txtadd(parentlayer,'layer[',get(callout_line),']');
+	copy(layer[get(callout_line_vertical)].parent,parentlayer);
+
+	txtadd(callout_title,'callout_title_',get(name));
+	addlayer(get(callout_title));
+	copy(hotspot[get(name)].callout_title,callout_title);
+	layer[get(callout_title)].loadstyle(call_out_titles7callout_title);
+	txtadd(parentlayer2,'layer[',get(callout_line_vertical),']');
+	copy(layer[get(callout_title)].parent,parentlayer2);
+	getmessage(montitre, get(tooltip));
+	copy(layer[get(callout_title)].html,montitre);
+	
+	txtadd(callout_desc,'callout_desc_',get(name));
+	addlayer(get(callout_desc));
+	copy(hotspot[get(name)].callout_desc,callout_desc);
+	layer[get(callout_desc)].loadstyle(call_out_titles7callout_desc);
+	copy(layer[get(callout_desc)].parent,callout_title);
+	getmessage(madesc, get(descriptionid));
+	copy(layer[get(callout_desc)].html,madesc);
+	
+	if(hotspot[get(name)].onclick, copy(layer[get(callout_line_vertical)].onclick,hotspot[get(name)].onclick);set(layer[get(callout_line_vertical)].bgcapture,true));
+	if(hotspot[get(name)].callout_type == onuserclick, set(hotspot[get(name)].onclick,oncallout());set(hotspot[get(name)].bgcapture,true);set(hotspot[get(name)].handcursor,true));
+	if(hotspot[get(name)].callout_type == onover, set(hotspot[get(name)].onover,oncallout());set(hotspot[get(name)].onout,oncallin());set(hotspot[get(name)].bgcapture,true);set(hotspot[get(name)].handcursor,true));
+	set(events[testshotspots].onviewchanged,testhotspots();)
+ 	"
+	
+	oncallout="animate_callout(get(callout_line), get(callout_line_vertical), get(callout_title), get(callout_desc),get(toheight));"	
+	oncallin="animate_callin(get(callout_line), get(callout_line_vertical));"
+/>
+
+<style 
+	name="call_out_titles7callout_line" 
+	type="container" 
+	width="2" 
+	height="0"
+	bgalpha="1"
+	bgcolor="0xffffff"
+	align="top"
+	edge="bottom"
+/>
+
+<style 
+	name="call_out_titles7callout_line_vertical" 
+	type="container" 
+	width="0" 
+	height="0" 
+	bgcolor="0xffffff"
+	
+	rotate="-45"
+	
+		bgborder="0,0,0,2 0xffffff"
+		
+		
+		
+		
+		
+		edge="left"
+		align="top"
+		
+	 
+	
+	
+	maskchildren="true"
+/>
+
+<style 
+	name="call_out_titles7callout_title" 
+	type="text"
+	enabled="false"
+	align="topleft"
+	ox="10"  
+	bg="true"
+	bgcolor="0xb50000"
+	bgalpha="1"
+	bgborder="false"
+	css="color:#ffffff;font-family:Arial;font-size:25px;text-align:left;"
+ 
+	padding="5 10"
+/>
+
+<style 
+	name="call_out_titles7callout_desc" 
+	type="text"
+	enabled="false"
+	align="bottomleft"
+	edge="topleft"  
+	bg="false"
+	bgborder="false"
+	textshadow="1" textshadowrange="5.0" textshadowangle="45" textshadowcolor="0x000000" textshadowalpha="1"
+	css="color:#ffffff;font-family:Arial;font-size:18px;text-align:left;"
+ 
+	padding="5 0"
+/>
+
+
+<style name="call_out_titles7callout_pulse" type="container" align="center" 
+bg="false" 
+bgborder="3 0xffffff 1.00" 
+bgroundedge="calc:10 * 2"
+width="10" height="10" 
+onloaded="pulse(get(name))"/>
+
+<!-- 360Images Call Out Titles Plugin -->
+
+
+
+
+<callout author_context="true"/>
+<style
+	distancepopup="2"
+	distancepopup.tablet="3"
+	distancepopup.mobile="5"
+	visible="false"
+	callout_type="centerscreen"
+	callout_type.mobile="centerscreen"
+	callout_type.tablet="centerscreen"
+	name="callout_fourlines"
+	type="container" 
+	width="10" 
+	height="10" 
+	bgroundedge="10"
+	bgcolor="0xffffff" 
+	bgalpha="1.00"
+	bgborder="2 0xffffff 1.00"
+	toheight="200"
+	pumpitup="true"
+	pumpitup.mobile="true"
+	pumpitup.tablet="true"
+	rotate="135"
+	minfov="180"
+	maxfov="1"
+	minfov.mobile="180"
+	maxfov.mobile="1"
+	minfov.tablet="180"
+	maxfov.tablet="1"
+	onloaded="
+	txtadd(parentspot,'hotspot[',get(name),']');
+
+	txtadd(callout_pulse,'callout_pulse_',get(name));
+	addlayer(get(callout_pulse));
+	layer[get(callout_pulse)].loadstyle(call_out_titles8callout_pulse);
+	copy(layer[get(callout_pulse)].parent,parentspot);
+	
+	txtadd(callout_line,'callout_line_',get(name));
+	addlayer(get(callout_line));
+	copy(hotspot[get(name)].callout_line,callout_line);
+	layer[get(callout_line)].loadstyle(call_out_titles8callout_line);
+	copy(layer[get(callout_line)].parent,parentspot);
+	copy(layer[get(callout_line)].x,xpoint);
+	copy(layer[get(callout_line)].y,ypoint);
+	
+	txtadd(callout_line_vertical,'callout_line_vertical_',get(name));
+	addlayer(get(callout_line_vertical));
+	copy(hotspot[get(name)].callout_line_vertical,callout_line_vertical);
+	layer[get(callout_line_vertical)].loadstyle(call_out_titles8callout_line_vertical);
+	txtadd(parentlayer,'layer[',get(callout_line),']');
+	copy(layer[get(callout_line_vertical)].parent,parentlayer);
+
+	txtadd(callout_title,'callout_title_',get(name));
+	addlayer(get(callout_title));
+	copy(hotspot[get(name)].callout_title,callout_title);
+	layer[get(callout_title)].loadstyle(call_out_titles8callout_title);
+	txtadd(parentlayer2,'layer[',get(callout_line_vertical),']');
+	copy(layer[get(callout_title)].parent,parentlayer2);
+	getmessage(montitre, get(tooltip));
+	copy(layer[get(callout_title)].html,montitre);
+	
+	txtadd(callout_desc,'callout_desc_',get(name));
+	addlayer(get(callout_desc));
+	copy(hotspot[get(name)].callout_desc,callout_desc);
+	layer[get(callout_desc)].loadstyle(call_out_titles8callout_desc);
+	copy(layer[get(callout_desc)].parent,callout_title);
+	getmessage(madesc, get(descriptionid));
+	copy(layer[get(callout_desc)].html,madesc);
+	
+	if(hotspot[get(name)].onclick, copy(layer[get(callout_line_vertical)].onclick,hotspot[get(name)].onclick);set(layer[get(callout_line_vertical)].bgcapture,true));
+	if(hotspot[get(name)].callout_type == onuserclick, set(hotspot[get(name)].onclick,oncallout());set(hotspot[get(name)].bgcapture,true);set(hotspot[get(name)].handcursor,true));
+	if(hotspot[get(name)].callout_type == onover, set(hotspot[get(name)].onover,oncallout());set(hotspot[get(name)].onout,oncallin());set(hotspot[get(name)].bgcapture,true);set(hotspot[get(name)].handcursor,true));
+	set(events[testshotspots].onviewchanged,testhotspots();)
+ 	"
+	
+	oncallout="animate_callout(get(callout_line), get(callout_line_vertical), get(callout_title), get(callout_desc),get(toheight));"	
+	oncallin="animate_callin(get(callout_line), get(callout_line_vertical));"
+/>
+
+<style 
+	name="call_out_titles8callout_line" 
+	type="container" 
+	width="2" 
+	height="0"
+	bgalpha="1"
+	bgcolor="0xffffff"
+	align="top"
+	edge="bottom"
+/>
+
+<style 
+	name="call_out_titles8callout_line_vertical" 
+	type="container" 
+	width="0" 
+	height="0" 
+	bgcolor="0xffffff"
+	
+	rotate="-135"
+	
+		
+		
+		bgborder="2,2,2,2 0xffffff"
+		
+		
+		
+		edge="left"
+		align="top"
+		
+	 
+	
+	
+	maskchildren="true"
+/>
+
+<style 
+	name="call_out_titles8callout_title" 
+	type="text"
+	enabled="false"
+	align="topleft"
+	ox="10"  
+	bg="false"
+	bgborder="false"
+	textshadow="1" textshadowrange="5.0" textshadowangle="45" textshadowcolor="0x000000" textshadowalpha="0.50000762951094835"
+	css="color:#ffffff;font-family:Arial;font-size:25px;text-align:left;"
+ 
+	padding="5 10"
+/>
+
+<style 
+	name="call_out_titles8callout_desc" 
+	type="text"
+	enabled="false"
+	align="bottomleft"
+	edge="topleft"  
+	bg="false"
+	bgborder="false"
+	textshadow="1" textshadowrange="5.0" textshadowangle="45" textshadowcolor="0x000000" textshadowalpha="1"
+	css="color:#ffffff;font-family:Arial;font-size:18px;text-align:left;"
+ 
+	padding="5 5"
+/>
+
+
+<style name="call_out_titles8callout_pulse" type="container" align="center" 
+bg="false" 
+bgborder="3 0xffffff 1.00" 
+bgroundedge="calc:10 * 2"
+width="10" height="10" 
+onloaded="pulse(get(name))"/>
+
+<!-- ********** -->
+<!-- Include an XML file -->
+<!-- id : includePlugin -->
+<!-- ********** -->
+<include url="%FIRSTXML%/graphics/include/callout_krpano.xml"/>
+
+<!-- 360Images Call Out Titles Plugin -->
+
+
+
+
+<callout author_context="true"/>
+<style
+	distancepopup="2"
+	distancepopup.tablet="3"
+	distancepopup.mobile="5"
+	visible="false"
+	callout_type="centerscreen"
+	callout_type.mobile="centerscreen"
+	callout_type.tablet="centerscreen"
+	name="callout_action"
+	type="container" 
+	width="10" 
+	height="10" 
+	bgroundedge="10"
+	bgcolor="0xffffff" 
+	bgalpha="1.00"
+	bgborder="2 0xffffff 1.00"
+	toheight="200"
+	pumpitup="true"
+	pumpitup.mobile="true"
+	pumpitup.tablet="true"
+	rotate="45"
+	minfov="180"
+	maxfov="1"
+	minfov.mobile="180"
+	maxfov.mobile="1"
+	minfov.tablet="180"
+	maxfov.tablet="1"
+	onloaded="
+	txtadd(parentspot,'hotspot[',get(name),']');
+
+	txtadd(callout_pulse,'callout_pulse_',get(name));
+	addlayer(get(callout_pulse));
+	layer[get(callout_pulse)].loadstyle(call_out_titles9callout_pulse);
+	copy(layer[get(callout_pulse)].parent,parentspot);
+	
+	txtadd(callout_line,'callout_line_',get(name));
+	addlayer(get(callout_line));
+	copy(hotspot[get(name)].callout_line,callout_line);
+	layer[get(callout_line)].loadstyle(call_out_titles9callout_line);
+	copy(layer[get(callout_line)].parent,parentspot);
+	copy(layer[get(callout_line)].x,xpoint);
+	copy(layer[get(callout_line)].y,ypoint);
+	
+	txtadd(callout_line_vertical,'callout_line_vertical_',get(name));
+	addlayer(get(callout_line_vertical));
+	copy(hotspot[get(name)].callout_line_vertical,callout_line_vertical);
+	layer[get(callout_line_vertical)].loadstyle(call_out_titles9callout_line_vertical);
+	txtadd(parentlayer,'layer[',get(callout_line),']');
+	copy(layer[get(callout_line_vertical)].parent,parentlayer);
+
+	txtadd(callout_title,'callout_title_',get(name));
+	addlayer(get(callout_title));
+	copy(hotspot[get(name)].callout_title,callout_title);
+	layer[get(callout_title)].loadstyle(call_out_titles9callout_title);
+	txtadd(parentlayer2,'layer[',get(callout_line_vertical),']');
+	copy(layer[get(callout_title)].parent,parentlayer2);
+	getmessage(montitre, get(tooltip));
+	copy(layer[get(callout_title)].html,montitre);
+	
+	txtadd(callout_desc,'callout_desc_',get(name));
+	addlayer(get(callout_desc));
+	copy(hotspot[get(name)].callout_desc,callout_desc);
+	layer[get(callout_desc)].loadstyle(call_out_titles9callout_desc);
+	copy(layer[get(callout_desc)].parent,callout_title);
+	getmessage(madesc, get(descriptionid));
+	copy(layer[get(callout_desc)].html,madesc);
+	
+	if(hotspot[get(name)].onclick, copy(layer[get(callout_line_vertical)].onclick,hotspot[get(name)].onclick);set(layer[get(callout_line_vertical)].bgcapture,true));
+	if(hotspot[get(name)].callout_type == onuserclick, set(hotspot[get(name)].onclick,oncallout());set(hotspot[get(name)].bgcapture,true);set(hotspot[get(name)].handcursor,true));
+	if(hotspot[get(name)].callout_type == onover, set(hotspot[get(name)].onover,oncallout());set(hotspot[get(name)].onout,oncallin());set(hotspot[get(name)].bgcapture,true);set(hotspot[get(name)].handcursor,true));
+	set(events[testshotspots].onviewchanged,testhotspots();)
+ 	"
+	
+	oncallout="animate_callout(get(callout_line), get(callout_line_vertical), get(callout_title), get(callout_desc),get(toheight));"	
+	oncallin="animate_callin(get(callout_line), get(callout_line_vertical));"
+/>
+
+<style 
+	name="call_out_titles9callout_line" 
+	type="container" 
+	width="2" 
+	height="0"
+	bgalpha="1"
+	bgcolor="0xffffff"
+	align="top"
+	edge="bottom"
+/>
+
+<style 
+	name="call_out_titles9callout_line_vertical" 
+	type="container" 
+	width="0" 
+	height="0" 
+	bgcolor="0xffffff"
+	
+	rotate="-45"
+	
+		bgborder="0,0,0,2 0xffffff"
+		
+		
+		
+		
+		
+		edge="left"
+		align="top"
+		
+	 
+	
+	
+	maskchildren="true"
+/>
+
+<style 
+	name="call_out_titles9callout_title" 
+	type="text"
+	enabled="false"
+	align="topleft"
+	ox="10"  
+	bg="true"
+	bgcolor="0xb50000"
+	bgalpha="1"
+	bgborder="false"
+	css="color:#ffffff;font-family:Arial;font-size:25px;text-align:left;"
+ 
+	padding="5 10"
+/>
+
+<style 
+	name="call_out_titles9callout_desc" 
+	type="text"
+	enabled="false"
+	align="bottomleft"
+	edge="topleft"  
+	bg="false"
+	bgborder="false"
+	textshadow="1" textshadowrange="5.0" textshadowangle="45" textshadowcolor="0x000000" textshadowalpha="1"
+	css="color:#ffffff;font-family:Arial;font-size:18px;text-align:left;"
+ 
+	padding="5 0"
+/>
+
+
+<style name="call_out_titles9callout_pulse" type="container" align="center" 
+bg="false" 
+bgborder="3 0xffffff 1.00" 
+bgroundedge="calc:10 * 2"
+width="10" height="10" 
+onloaded="pulse(get(name))"/>
+
+<!-- ********** -->
+<!-- Button -->
+<!-- id : button -->
+<!-- ********** -->
+
+  <layer name="button"
+         keep="true"
+         url="%FIRSTXML%/graphics/button/en.png"
+         align="topright"
+         x="10"
+         y="10"
+         zorder="12"
+         visible="false"
+         onclick="buttonOnClick"
+         />
+
+
+
+  <action name="buttonOnClick">setTourLanguage(en);
+
+
+  </action>
+
+  <events name="buttonevents"
+    onTourStart="showbutton();"
+    hidetourcontrols="hidebutton();"
+    showtourcontrols="showbutton();"
+    keep="true" />
+  <action name="hidebutton">set(layer[button].visible, false);</action>
+  <action name="showbutton">if(tour_displaycontrols,set(layer[button].visible, true);,hidebutton(););</action>
+
+
+<!-- ********** -->
+<!-- Button1 -->
+<!-- id : button1 -->
+<!-- ********** -->
+
+  <layer name="button1"
+         keep="true"
+         url="%FIRSTXML%/graphics/button1/fr.png"
+         align="topright"
+         x="70"
+         y="10"
+         zorder="13"
+         visible="false"
+         onclick="button1OnClick"
+         />
+
+
+
+  <action name="button1OnClick">setTourLanguage(fr);
+
+
+  </action>
+
+  <events name="button1events"
+    onTourStart="showbutton1();"
+    hidetourcontrols="hidebutton1();"
+    showtourcontrols="showbutton1();"
+    keep="true" />
+  <action name="hidebutton1">set(layer[button1].visible, false);</action>
+  <action name="showbutton1">if(tour_displaycontrols,set(layer[button1].visible, true);,hidebutton1(););</action>
+
+<action name="setTourLanguage">
+  if (%1 == null,
+    showlog();
+    trace("CHANGE TOUR LANGUAGE : NO LANGUAGE SET");
+   ,
+    set(tour_language, %1);
+    events.dispatch(changetourlanguage);
+  );
+</action>
+
+</krpano>

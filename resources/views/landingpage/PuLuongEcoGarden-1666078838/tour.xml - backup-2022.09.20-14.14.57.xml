@@ -1,0 +1,359 @@
+﻿<krpano version="1.20.6" title="Virtual Tour">
+<include url="action_html.xml" />
+
+	
+      <!-- <include url="plugins/showtext.xml" /> -->
+    <!-- <include url="plugins/polygonal_hotspots_editor.xml"  /> -->
+    <!-- <include url="plugins/dragg/dragg.xml" /> -->
+    <include url="option.xml" />
+     <include url="update.xml" />
+      <include url="skin/vtourskin.xml" />
+      <include url="plugins/popup_blur.xml" />
+      <include url="plugins/youtube_player.xml" />
+          <include url="plugins/showtext.xml" />
+
+    <!-- <include url="index_skin.xml"/> -->
+    <include url="index_core.xml"/>
+    <include url="index_messages_en.xml"/>
+    <!-- <include url="index_messages_fr.xml"/> -->
+          
+          
+      
+
+
+	
+	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
+	<skin_settings
+       maps="true"
+       maps_type="google"
+       maps_bing_api_key=""
+       maps_google_api_key=""
+       maps_zoombuttons="false"
+       maps_loadonfirstuse="true"
+       gyro="true"
+       gyro_keeplookingdirection="false"
+       webvr="true"
+       webvr_keeplookingdirection="true"
+       webvr_prev_next_hotspots="true"
+       autotour="false"
+       littleplanetintro="false"
+       followmousecontrol="false"
+       title="true"
+       thumbs="true"
+       thumbs_width="120" thumbs_height="80" thumbs_padding="10" thumbs_crop="0|40|240|160"
+       thumbs_opened="false"
+       thumbs_text="false"
+       thumbs_dragging="true"
+       thumbs_onhoverscrolling="false"
+       thumbs_scrollbuttons="false"
+       thumbs_scrollindicator="false"
+       thumbs_loop="false"
+       tooltips_buttons="false"
+       tooltips_thumbs="false"
+       tooltips_hotspots="false"
+       tooltips_mapspots="false"
+       deeplinking="false"
+       loadscene_flags="MERGE"
+       loadscene_blend="OPENBLEND(0.5, 0.0, 0.75, 0.05, linear)"
+       loadscene_blend_prev="SLIDEBLEND(0.5, 180, 0.75, linear)"
+       loadscene_blend_next="SLIDEBLEND(0.5,   0, 0.75, linear)"
+       loadingtext="loading..."
+       layout_width="100%"
+       layout_maxwidth="814"
+       controlbar_width="-24"
+       controlbar_height="40"
+       controlbar_offset="20"
+       controlbar_offset_closed="-40"
+       controlbar_overlap.no-fractionalscaling="10"
+       controlbar_overlap.fractionalscaling="0"
+       design_skin_images="vtourskin.png"
+       design_bgcolor="0x2D3E50"
+       design_bgalpha="0.8"
+       design_bgborder="0"
+       design_bgroundedge="1"
+       design_bgshadow="0 4 10 0x000000 0.3"
+       design_thumbborder_bgborder="3 0xFFFFFF 1.0"
+       design_thumbborder_padding="2"
+       design_thumbborder_bgroundedge="0"
+       design_text_css="color:#FFFFFF; font-family:Arial;"
+       design_text_shadow="1"
+
+    />
+
+    <skin_settings
+		devices="mobile|tablet"
+	/>
+
+
+	<!--
+	    For an alternative skin design either change the <skin_settings> values
+	    from above or optionally include one of the predefined designs from below.
+	-->
+	<!-- <include url="skin/vtourskin_design_flat_light.xml"  /> -->
+	<!-- <include url="skin/vtourskin_design_glass.xml" /> -->
+	<!-- <include url="skin/vtourskin_design_ultra_light.xml" /> -->
+	<!-- <include url="skin/vtourskin_design_117.xml"         /> -->
+	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
+	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
+
+
+	<!-- startup action - load the first scene -->
+	<action name="startup" autorun="onstart">
+     
+		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
+		loadscene(get(startscene), null, MERGE);
+		if(startactions !== null, startactions() );
+
+         playsound(bgsound, assets/voice_nen.mp3, true, 0.8);
+		set(layer[mapfull].visible,false);
+		set( layer[map2].visible, false);
+        linkscene_title_xml("");  
+        <!-- showlog();
+        trace(array_list_xml); -->
+		
+	</action>
+
+	
+    <action name= "showHotSpot">
+		showtext([img src=%1 height=120px width=220px][/img][p style="color="#FF00FF""]%2[/p],Target);
+	</action>
+    
+<scene name="scene_2_toancanhbanngay" title="Toàn cảnh ban ngày" onstart="" thumburl="panos/2_toancanhbanngay.tiles/thumb.jpg" lat="20.46836253" lng="105.12055889" heading="0.0">
+
+		<view hlookat="0.182" vlookat="16.278" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/2_toancanhbanngay.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/2_toancanhbanngay.tiles/pano_%s.jpg" />
+		</image>
+
+        <hotspot name="spot7" style="hs_image_text"  ath="-114.538" atv="2.157" distorted="false" zoom="false"  />
+		    <layer name="text7" url="textfield.swf" css="font-weight: bold; color: 0xffffff; padding-top:10px" parent="hotspot[spot7]" align="top" html="Thác Hiêu" background="false" />
+            
+             <!-- <hotspot name="spot9" style="hs_image_text"   ath="3.648" atv="-24.796" distorted="false" zoom="false"  />
+		    <layer name="text9" url="textfield.swf" css="font-weight: bold;font-size:10px; color: 0xffffff; padding-top:10px" parent="hotspot[spot9]" align="top" html="Khu bảo tồn Thiên nhiên Pù Luông" background="false" /> -->
+            <hotspot name="spot10" style="hs_image_text"  ath="109.307" atv="-1.079" distorted="false" zoom="false"  />
+		    <layer name="text10" url="textfield.swf" css="font-weight: bold; color: 0xffffff; padding-top:10px" parent="hotspot[spot10]" align="top" html="Bản Lác" background="false" />
+		<hotspot name="spot1" style="hotspot_point" ath="1.74" atv="28.905" linkedscene="scene_5_beboi_hoanghon" />
+
+          <hotspot name="spotpoint19" ath="80.672" atv="22.35" style="Iconcallout_square" tag="point" descriptionid="spotpoint19_description" handcursor="false" tooltip="spotpoint19_tooltip"/>
+        <hotspot name="spotpoint19" devices="flash" zorder="3"/>
+        <hotspot name="spotpoint19" devices="html5" zorder="3" zorder2="1"/>
+
+		<hotspot name="spotpoint41"  ath="17.839" atv="-5.467"  style="Iconcallout_square" tag="point" descriptionid="spotpoint41_description" handcursor="false" tooltip="spotpoint41_tooltip"/>
+        <hotspot name="spotpoint41" devices="flash" zorder="3"/>
+        <hotspot name="spotpoint41" devices="html5" zorder="3" zorder2="1"/>
+
+        <hotspot name="spotpoint43" ath="-74.655" atv="14.235" style="Iconcallout_pano" tag="point" descriptionid="spotpoint43_description" handcursor="false" tooltip="spotpoint43_tooltip"/>
+        <hotspot name="spotpoint43" devices="flash" zorder="3"/>
+        <hotspot name="spotpoint43" devices="html5" zorder="3" zorder2="1"/>
+
+         <hotspot name="spotpoint44" ath="-102.536" atv="20.255" style="Iconcallout_pano" tag="point" descriptionid="spotpoint44_description" handcursor="false" tooltip="spotpoint44_tooltip"/>
+        <hotspot name="spotpoint44" devices="flash" zorder="3"/>
+        <hotspot name="spotpoint44" devices="html5" zorder="3" zorder2="1"/>
+
+         <hotspot name="spotpoint50" ath="45.943" atv="15.633"  style="Iconcallout_square" tag="point" descriptionid="spotpoint50_description" handcursor="false" tooltip="spotpoint50_tooltip"/>
+        <hotspot name="spotpoint50" devices="flash" zorder="3"/>
+        <hotspot name="spotpoint50" devices="html5" zorder="3" zorder2="1"/>
+
+           <hotspot name="spotpoint51" ath="173.824" atv="25.386"  style="Iconcallout_pano" tag="point" descriptionid="spotpoint51_description" handcursor="false" tooltip="spotpoint51_tooltip"/>
+        <hotspot name="spotpoint51" devices="flash" zorder="3"/>
+        <hotspot name="spotpoint51" devices="html5" zorder="3" zorder2="1"/>
+
+
+
+        <action name="hidepanopointspots"> set(hotspot[spotpoint19].visible, false); set(hotspot[spotpoint20].visible, false); set(hotspot[spotpoint23].visible, false); set(hotspot[spotpoint38].visible, false); set(hotspot[spotpoint39].visible, false); set(hotspot[spotpoint40].visible, false); set(hotspot[spotpoint41].visible, false); set(hotspot[spotpoint43].visible, false); set(hotspot[spotpoint45].visible, false); </action>
+        <action name="showpanopointspots"> set(hotspot[spotpoint19].visible, true); set(hotspot[spotpoint20].visible, true); set(hotspot[spotpoint23].visible, true); set(hotspot[spotpoint38].visible, true); set(hotspot[spotpoint39].visible, true); set(hotspot[spotpoint40].visible, true); set(hotspot[spotpoint41].visible, true); set(hotspot[spotpoint43].visible, true); set(hotspot[spotpoint45].visible, true); </action>
+        <events name="pano10stopanimatedspots" onremovepano=""/>
+        <action name="showpanospotsaction"> if (tour_displayspots, showpanopointspots(); ); </action>
+        <action name="hidepanospotsaction"> hidepanopointspots(); </action>
+
+	</scene>
+	
+<scene name="scene_1_toancanhbanngay_hoboi" title="Toàn cảnh ban ngày, trên hồ bơi" onstart="" thumburl="panos/1_toancanhbanngay_hoboi.tiles/thumb.jpg" lat="20.46831092" lng="105.12042131" heading="0.0">
+
+		<view hlookat="1.151" vlookat="67.966" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/1_toancanhbanngay_hoboi.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/1_toancanhbanngay_hoboi.tiles/pano_%s.jpg" />
+		</image>
+           <hotspot name="spot7" style="hs_image_text"  ath="-114.538" atv="2.157" distorted="false" zoom="false"  />
+		    <layer name="text7" url="textfield.swf" css="font-weight: bold;  color: 0xffffff; padding-top:10px" parent="hotspot[spot7]" align="top" html="Thác Hiêu" background="false" />
+           
+             <!-- <hotspot name="spot9" style="hs_image_text"   ath="3.648" atv="-24.796" distorted="false" zoom="false"  />
+		    <layer name="text9" url="textfield.swf" css="font-weight: bold;font-size:10px; color: 0xffffff; padding-top:10px" parent="hotspot[spot9]" align="top" html="Khu bảo tồn Thiên nhiên Pù Luông" background="false" /> -->
+            <hotspot name="spot10" style="hs_image_text"  ath="109.307" atv="-1.079" distorted="false" zoom="false"  />
+		    <layer name="text10" url="textfield.swf" css="font-weight: bold; color: 0xffffff; padding-top:10px" parent="hotspot[spot10]" align="top" html="Bản Lác" background="false" />
+		<hotspot name="spot1" style="hotspot_point" ath="-88.886" atv="81.325" linkedscene="scene_4_beboi_ngay" />
+
+
+         <hotspot name="spotpoint19" ath="127.369" atv="47.639" style="Iconcallout_square" tag="point" descriptionid="spotpoint19_description" handcursor="false" tooltip="spotpoint19_tooltip"/>
+        <hotspot name="spotpoint19" devices="flash" zorder="3"/>
+        <hotspot name="spotpoint19" devices="html5" zorder="3" zorder2="1"/>
+
+		<hotspot name="spotpoint41" ath="24.397" atv="31.308"  style="Iconcallout_square" tag="point" descriptionid="spotpoint41_description" handcursor="false" tooltip="spotpoint41_tooltip"/>
+        <hotspot name="spotpoint41" devices="flash" zorder="3"/>
+        <hotspot name="spotpoint41" devices="html5" zorder="3" zorder2="1"/>
+
+        <hotspot name="spotpoint43" ath="-114.479" atv="30.068"  style="Iconcallout_pano" tag="point" descriptionid="spotpoint43_description" handcursor="false" tooltip="spotpoint43_tooltip"/>
+        <hotspot name="spotpoint43" devices="flash" zorder="3"/>
+        <hotspot name="spotpoint43" devices="html5" zorder="3" zorder2="1"/>
+
+         <hotspot name="spotpoint50" ath="95.159" atv="53.775"  style="Iconcallout_square" tag="point" descriptionid="spotpoint50_description" handcursor="false" tooltip="spotpoint50_tooltip"/>
+        <hotspot name="spotpoint50" devices="flash" zorder="3"/>
+        <hotspot name="spotpoint50" devices="html5" zorder="3" zorder2="1"/>
+
+         <hotspot name="spotpoint51" ath="176.062" atv="28.476"  style="Iconcallout_pano" tag="point" descriptionid="spotpoint51_description" handcursor="false" tooltip="spotpoint51_tooltip"/>
+        <hotspot name="spotpoint51" devices="flash" zorder="3"/>
+        <hotspot name="spotpoint51" devices="html5" zorder="3" zorder2="1"/>
+
+
+        <action name="hidepanopointspots"> set(hotspot[spotpoint19].visible, false); set(hotspot[spotpoint20].visible, false); set(hotspot[spotpoint23].visible, false); set(hotspot[spotpoint38].visible, false); set(hotspot[spotpoint39].visible, false); set(hotspot[spotpoint40].visible, false); set(hotspot[spotpoint41].visible, false); set(hotspot[spotpoint43].visible, false); set(hotspot[spotpoint45].visible, false); </action>
+        <action name="showpanopointspots"> set(hotspot[spotpoint19].visible, true); set(hotspot[spotpoint20].visible, true); set(hotspot[spotpoint23].visible, true); set(hotspot[spotpoint38].visible, true); set(hotspot[spotpoint39].visible, true); set(hotspot[spotpoint40].visible, true); set(hotspot[spotpoint41].visible, true); set(hotspot[spotpoint43].visible, true); set(hotspot[spotpoint45].visible, true); </action>
+        <events name="pano10stopanimatedspots" onremovepano=""/>
+        <action name="showpanospotsaction"> if (tour_displayspots, showpanopointspots(); ); </action>
+        <action name="hidepanospotsaction"> hidepanopointspots(); </action>
+
+    
+
+	</scene>
+
+	
+
+	<scene name="scene_3_toancanhsangsom" title="Toàn cảnh sáng sớm" onstart="" thumburl="panos/3_toancanhsangsom.tiles/thumb.jpg" lat="20.46841539" lng="105.12070033" heading="0.0">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/3_toancanhsangsom.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/3_toancanhsangsom.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="hotspot_point" ath="-3.022" atv="26.514" linkedscene="scene_4_beboi_ngay" />
+        
+        <hotspot name="spot7" style="hs_image_text"  ath="-121.746" atv="-0.022" distorted="false" zoom="false"  />
+		    <layer name="text7" url="textfield.swf" css="font-weight: bold;  color: 0xffffff; padding-top:10px" parent="hotspot[spot7]" align="top" html="Thác Hiêu" background="false" />
+           
+             <!-- <hotspot name="spot9" style="hs_image_text"   ath="3.648" atv="-24.796" distorted="false" zoom="false"  />
+		    <layer name="text9" url="textfield.swf" css="font-weight: bold;color: 0xffffff; padding-top:10px" parent="hotspot[spot9]" align="top" html="Khu bảo tồn Thiên nhiên Pù Luông" background="false" /> -->
+            <hotspot name="spot10" style="hs_image_text"  ath="106.97" atv="-3.007" distorted="false" zoom="false"  />
+		    <layer name="text10" url="textfield.swf" css="font-weight: bold; color: 0xffffff; padding-top:10px" parent="hotspot[spot10]" align="top" html="Bản Lác" background="false" />
+
+
+           <hotspot name="spotpoint19" ath="36.452" atv="27.678" style="Iconcallout_square" tag="point" descriptionid="spotpoint19_description" handcursor="false" tooltip="spotpoint19_tooltip"/>
+        <hotspot name="spotpoint19" devices="flash" zorder="3"/>
+        <hotspot name="spotpoint19" devices="html5" zorder="3" zorder2="1"/>
+
+		<hotspot name="spotpoint41"   ath="8.675" atv="6.975"   style="Iconcallout_square" tag="point" descriptionid="spotpoint41_description" handcursor="false" tooltip="spotpoint41_tooltip"/>
+        <hotspot name="spotpoint41" devices="flash" zorder="3"/>
+        <hotspot name="spotpoint41" devices="html5" zorder="3" zorder2="1"/>
+
+        <hotspot name="spotpoint43" ath="-40.842" atv="21.135" style="Iconcallout_pano" tag="point" descriptionid="spotpoint43_description" handcursor="false" tooltip="spotpoint43_tooltip"/>
+        <hotspot name="spotpoint43" devices="flash" zorder="3"/>
+        <hotspot name="spotpoint43" devices="html5" zorder="3" zorder2="1"/>
+
+         <hotspot name="spotpoint44"  ath="-67.06" atv="30.189" style="Iconcallout_pano" tag="point" descriptionid="spotpoint44_description" handcursor="false" tooltip="spotpoint44_tooltip"/>
+        <hotspot name="spotpoint44" devices="flash" zorder="3"/>
+        <hotspot name="spotpoint44" devices="html5" zorder="3" zorder2="1"/>
+
+         <hotspot name="spotpoint51" ath="165.436" atv="41.091"  style="Iconcallout_pano" tag="point" descriptionid="spotpoint51_description" handcursor="false" tooltip="spotpoint51_tooltip"/>
+        <hotspot name="spotpoint51" devices="flash" zorder="3"/>
+        <hotspot name="spotpoint51" devices="html5" zorder="3" zorder2="1"/>
+
+        
+
+        <action name="hidepanopointspots"> set(hotspot[spotpoint19].visible, false); set(hotspot[spotpoint20].visible, false); set(hotspot[spotpoint23].visible, false); set(hotspot[spotpoint38].visible, false); set(hotspot[spotpoint39].visible, false); set(hotspot[spotpoint40].visible, false); set(hotspot[spotpoint41].visible, false); set(hotspot[spotpoint43].visible, false); set(hotspot[spotpoint45].visible, false); </action>
+        <action name="showpanopointspots"> set(hotspot[spotpoint19].visible, true); set(hotspot[spotpoint20].visible, true); set(hotspot[spotpoint23].visible, true); set(hotspot[spotpoint38].visible, true); set(hotspot[spotpoint39].visible, true); set(hotspot[spotpoint40].visible, true); set(hotspot[spotpoint41].visible, true); set(hotspot[spotpoint43].visible, true); set(hotspot[spotpoint45].visible, true); </action>
+        <events name="pano10stopanimatedspots" onremovepano=""/>
+        <action name="showpanospotsaction"> if (tour_displayspots, showpanopointspots(); ); </action>
+        <action name="hidepanospotsaction"> hidepanopointspots(); </action>
+	</scene>
+
+	<scene name="scene_4_beboi_ngay" title="Bể bơi ban ngày" onstart="" thumburl="panos/4_beboi_ngay.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-6.402" vlookat="10.623" fovtype="MFOV" fov="135.015" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/4_beboi_ngay.tiles/preview.jpg" />
+
+		<image prealign="0|0.0|0">
+			<cube url="panos/4_beboi_ngay.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="hs_flycam" ath="-29.932" atv="-31.461" linkedscene="scene_2_toancanhbanngay" />
+
+         <hotspot name="spotpoint19" ath="-69.463" atv="1.007" style="Iconcallout_pano" tag="point" descriptionid="spotpoint19_description" handcursor="false" tooltip="spotpoint19_tooltip"/>
+        <hotspot name="spotpoint19" devices="flash" zorder="3"/>
+        <hotspot name="spotpoint19" devices="html5" zorder="3" zorder2="1"/>
+
+		<hotspot name="spotpoint41"   ath="143.314" atv="-32.164" style="Iconcallout_pano" tag="point" descriptionid="spotpoint41_description" handcursor="false" tooltip="spotpoint41_tooltip"/>
+        <hotspot name="spotpoint41" devices="flash" zorder="3"/>
+        <hotspot name="spotpoint41" devices="html5" zorder="3" zorder2="1"/>
+
+        <hotspot name="spotpoint43" ath="28.068" atv="-6.536" style="Iconcallout_pano" tag="point" descriptionid="spotpoint43_description" handcursor="false" tooltip="spotpoint43_tooltip"/>
+        <hotspot name="spotpoint43" devices="flash" zorder="3"/>
+        <hotspot name="spotpoint43" devices="html5" zorder="3" zorder2="1"/>
+
+         <hotspot name="spotpoint50" ath="-105.104" atv="-8.133"  style="Iconcallout_pano" tag="point" descriptionid="spotpoint50_description" handcursor="false" tooltip="spotpoint50_tooltip"/>
+        <hotspot name="spotpoint50" devices="flash" zorder="3"/>
+        <hotspot name="spotpoint50" devices="html5" zorder="3" zorder2="1"/>
+
+      
+
+
+        <action name="hidepanopointspots"> set(hotspot[spotpoint19].visible, false); set(hotspot[spotpoint20].visible, false); set(hotspot[spotpoint23].visible, false); set(hotspot[spotpoint38].visible, false); set(hotspot[spotpoint39].visible, false); set(hotspot[spotpoint40].visible, false); set(hotspot[spotpoint41].visible, false); set(hotspot[spotpoint43].visible, false); set(hotspot[spotpoint45].visible, false); </action>
+        <action name="showpanopointspots"> set(hotspot[spotpoint19].visible, true); set(hotspot[spotpoint20].visible, true); set(hotspot[spotpoint23].visible, true); set(hotspot[spotpoint38].visible, true); set(hotspot[spotpoint39].visible, true); set(hotspot[spotpoint40].visible, true); set(hotspot[spotpoint41].visible, true); set(hotspot[spotpoint43].visible, true); set(hotspot[spotpoint45].visible, true); </action>
+        <events name="pano10stopanimatedspots" onremovepano=""/>
+        <action name="showpanospotsaction"> if (tour_displayspots, showpanopointspots(); ); </action>
+        <action name="hidepanospotsaction"> hidepanopointspots(); </action>
+
+	</scene>
+
+<!-- hotspot_point -->
+	<scene name="scene_5_beboi_hoanghon" title="Bể bơi hoàng hôn" onstart="" thumburl="panos/5_beboi_hoanghon.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="30.118" vlookat="15.266" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/5_beboi_hoanghon.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/5_beboi_hoanghon.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="hs_flycam" ath="-15.786" atv="-38.722" linkedscene="scene_3_toancanhsangsom" />
+
+        <hotspot name="spotpoint19" ath="-49.08" atv="-2.523" style="Iconcallout_pano" tag="point" descriptionid="spotpoint19_description" handcursor="false" tooltip="spotpoint19_tooltip"/>
+        <hotspot name="spotpoint19" devices="flash" zorder="3"/>
+        <hotspot name="spotpoint19" devices="html5" zorder="3" zorder2="1"/>
+
+		<hotspot name="spotpoint41"   ath="-179.631" atv="-37.924" style="Iconcallout_pano" tag="point" descriptionid="spotpoint41_description" handcursor="false" tooltip="spotpoint41_tooltip"/>
+        <hotspot name="spotpoint41" devices="flash" zorder="3"/>
+        <hotspot name="spotpoint41" devices="html5" zorder="3" zorder2="1"/>
+
+        <hotspot name="spotpoint43" ath="48.886" atv="-8.275" style="Iconcallout_pano" tag="point" descriptionid="spotpoint43_description" handcursor="false" tooltip="spotpoint43_tooltip"/>
+        <hotspot name="spotpoint43" devices="flash" zorder="3"/>
+        <hotspot name="spotpoint43" devices="html5" zorder="3" zorder2="1"/>
+
+         <hotspot name="spotpoint50" ath="-77.943" atv="-7.729"  style="Iconcallout_pano" tag="point" descriptionid="spotpoint50_description" handcursor="false" tooltip="spotpoint50_tooltip"/>
+        <hotspot name="spotpoint50" devices="flash" zorder="3"/>
+        <hotspot name="spotpoint50" devices="html5" zorder="3" zorder2="1"/>
+
+         <!-- <hotspot name="spotpoint50" ath="45.943" atv="15.633"  style="Iconcallout_square" tag="point" descriptionid="spotpoint50_description" handcursor="false" tooltip="spotpoint50_tooltip"/>
+        <hotspot name="spotpoint50" devices="flash" zorder="3"/>
+        <hotspot name="spotpoint50" devices="html5" zorder="3" zorder2="1"/> -->
+
+
+        <action name="hidepanopointspots"> set(hotspot[spotpoint19].visible, false); set(hotspot[spotpoint20].visible, false); set(hotspot[spotpoint23].visible, false); set(hotspot[spotpoint38].visible, false); set(hotspot[spotpoint39].visible, false); set(hotspot[spotpoint40].visible, false); set(hotspot[spotpoint41].visible, false); set(hotspot[spotpoint43].visible, false); set(hotspot[spotpoint45].visible, false); </action>
+        <action name="showpanopointspots"> set(hotspot[spotpoint19].visible, true); set(hotspot[spotpoint20].visible, true); set(hotspot[spotpoint23].visible, true); set(hotspot[spotpoint38].visible, true); set(hotspot[spotpoint39].visible, true); set(hotspot[spotpoint40].visible, true); set(hotspot[spotpoint41].visible, true); set(hotspot[spotpoint43].visible, true); set(hotspot[spotpoint45].visible, true); </action>
+        <events name="pano10stopanimatedspots" onremovepano=""/>
+        <action name="showpanospotsaction"> if (tour_displayspots, showpanopointspots(); ); </action>
+        <action name="hidepanospotsaction"> hidepanopointspots(); </action>
+
+	</scene>
+	
+	
+
+	
+	
+</krpano>
+

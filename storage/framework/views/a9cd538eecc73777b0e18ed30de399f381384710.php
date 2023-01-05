@@ -1,5 +1,6 @@
 <header class="header_page">
     <div class="container">
+        
             <div class="clearfix">
                 <a href="" style="float:left">
                     <img src="landingpage/assets/image/logo.png" class="logo_dh img-fluid" alt="">
@@ -8,7 +9,8 @@
                     <a href="<?php echo e(route('login')); ?>" style="color: #000 !important;">Đăng Nhập</a>
                 </div>
             </div>
-       
+           
+        
     </div>
     <div class="row">
         <div class="menu_page">
@@ -23,7 +25,7 @@
                             <a href="page/gioithieu.html" class="link_menu_sub">Thông tin chung</a>
                         </li>
                         <li class="item_menu_sub">
-                            <a href="" class="link_menu_sub">Thuy Loi University Virtual Tour</a>
+                            <a href="/page_tour" class="link_menu_sub">Thuy Loi University Virtual Tour</a>
                         </li>
                         <li class="item_menu_sub">
                             <a href="" class="link_menu_sub">Sứ mệnh tầm nhìn</a>
@@ -139,7 +141,7 @@
                     </ul>
                 </li>
                 <li class="item_menu">
-                    <a href="" class="link_menu">
+                    <a href="/tintuc" class="link_menu">
                         Tuyển sinh
                         <i class="fa-solid fa-angle-down"></i>
                     </a>
@@ -188,13 +190,13 @@
                     </ul>
                 </li>
                 <li class="item_menu">
-                    <a href="" class="link_menu">
+                    <a href="/cooperate" class="link_menu">
                        Hợp tác - Đối ngoại 
                         <i class="fa-solid fa-angle-down"></i>
                     </a>
                 </li>
                 <li class="item_menu">
-                    <a href="" class="link_menu">
+                    <a href="/tintuc" class="link_menu">
                         Tin tức 
                         <i class="fa-solid fa-angle-down"></i>
                     </a>
@@ -222,20 +224,6 @@
                      </ul>
                  </li>
                 </li>
-                <!-- <li class="item_menu">
-                    <a href="" class="link_menu">
-                       Tuyển dụng
-                        <i class="fa-solid fa-angle-down"></i>
-                    </a>
-                    <ul class="list_menu_sub">
-                        <li class="item_menu_sub">
-                            <a href="" class="link_menu_sub">Việc làm đại đại học Thủy Lợi</a>
-                        </li>
-                        <li class="item_menu_sub">
-                            <a href="" class="link_menu_sub">Việc Làm cho sinh viên</a>
-                        </li>                               
-                    </ul>
-                </li> -->
             </ul>
         </div>
     </div>

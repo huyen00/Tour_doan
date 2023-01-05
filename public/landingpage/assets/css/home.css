@@ -250,6 +250,11 @@
     position: relative;
     
 }
+.content_item_alumni img{
+    height: 190px;
+    width: 100%;
+    object-fit: cover;
+}
 .content_text_alumni{
     padding:1rem;
 }
@@ -275,6 +280,9 @@
 .link_alumni:hover{
     text-decoration: none;
     
+}
+.slick-list{
+    width: 100%;
 }
 .icon_slick{
     position: absolute;

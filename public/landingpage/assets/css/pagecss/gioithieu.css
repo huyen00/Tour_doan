@@ -51,7 +51,9 @@ body {
 .page_introduce{
     padding: 2rem 0rem 3rem;
 }
-
+.header_page .clearfix{
+    padding: 1rem 0rem;
+}
 /* ds cán bộ */
 .menu_search_cadres{
     display: flex;
@@ -269,11 +271,14 @@ font-size: 14px;
   }
 
   /* item tin tức */
+  .page_news{
+      padding-top:2rem;
+  }
   .page_item_news{
       margin-top:2rem;
   }
   .content_item_news{
-      width: 65%;
+      /* width: 65%; */
   }
   .categori_item_news{
       width: 35%;

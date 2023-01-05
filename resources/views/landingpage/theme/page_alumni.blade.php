@@ -13,15 +13,14 @@
                             </div>
                         </div>
                         <div class="content_text_alumni">
-                            <a href="" class="link_alumni">
+                            <a href="{{route('post.detail',__($content->sub_title))}}" class="link_alumni">
                                 <h6>{{__($content->title)}}</h6>
-                                <span class="clamp three-lines text_page">  {!!Str::words(strip_tags(__($content->description)), 60, '...')!!} </span>
+                                
                             </a>
+                            <span class="clamp three-lines text_page">  {!!Str::words(strip_tags(__($content->description)), 60, '...')!!} </span>
                         </div>
                     </div>
                     @endforeach
-                
-                    
                 </div>
             </div>
         </div>

@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Đồ án Tốt Nghiệp</title>
+    <title>Đồ án Tốt Nghiệp </title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <base href="{{ asset('') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+    <link rel="icon" href="/static/img/logodh.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
@@ -17,6 +17,8 @@
 
     <link rel="stylesheet" href="landingpage/assets/css/header_footer.css">
     <link rel="stylesheet" href="landingpage/assets/css/home.css">
+    <link rel="stylesheet" href="landingpage/assets/css/pagecss/gioithieu.css">
+   
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -48,31 +50,9 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="landingpage/assets/js/main.js"></script>
 
+      
     <script>
-       $(document).ready(function(){
-      $('.owl-carousel').owlCarousel({
-          // loop:true,
-          margin:10,
-        //   nav:false,
-          responsive:{
-              0:{
-                  items:1
-              },
-			  320:{
-				items:1
-			  },
-			  480:{
-				item:2
-			  },
-              600:{
-                  items:3
-              },
-              1000:{
-                  items:4
-              }
-          }
-      });
-  });
+      
     </script>
 
 </body>

@@ -10,7 +10,7 @@
                         <div class="item_event">
                             <img src="<?php echo e(count($content->images) >0 ? $content->images[0]->image : ''); ?>" class="img-fluid item_image_event" alt="">
                             <div class="content_item_event">
-                                <h5><?php echo e(__($content->title)); ?></h5>
+                                <a href="<?php echo e(route('post.detail',__($content->sub_title))); ?>"><h5><?php echo e(__($content->title)); ?></h5></a>
                                 <div class="text_content_item">
                                     <span class="clamp three-lines text_page"><?php echo Str::words(strip_tags(__($content->description)), 10, '...'); ?></span>
                                 </div>
@@ -24,8 +24,9 @@
             </div>
             
         </div>
-        <div class="see_more mt-0">
-            <a href="" class="linh_see_more">Xem sự kiện mới nhất</a>
-        </div>
+       
     </div>
+    <div class="see_more mt-0">
+            <a href="/tintuc" class="linh_see_more">Xem sự kiện mới nhất</a>
+        </div>
 </div><?php /**PATH C:\xampp\htdocs\Tour_doan\resources\views/landingpage/theme/page_event.blade.php ENDPATH**/ ?>
