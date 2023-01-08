@@ -337,3 +337,11 @@ font-size: 14px;
     background-color: rgba(212, 107, 20, 0.699);
     color:#fff;
 }
+/* điểm chuẩn */
+.content_item_event a{
+    font-size: 1rem;
+    color:rgb(44, 42, 42);
+}
+.content_item_event h5{
+    font-size: 1rem;
+}

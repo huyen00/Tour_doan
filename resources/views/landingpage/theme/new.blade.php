@@ -1,7 +1,8 @@
 <div class="page_news">
     <div class=" container content_news">
         <h2 class="title_page">Tin Mới Nhất</h2>
-        <div class="list_news">
+        <div class="list_news ">
+        <div class="responsive">
             @foreach ($last_new as $new )
             <div class="item_news">
                 <div class="image_news">
@@ -19,6 +20,8 @@
                 </div>
             </div>
             @endforeach
+        </div>
+           
 
         </div>
        

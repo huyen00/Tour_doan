@@ -1,5 +1,7 @@
 
-
+h5{
+    font-size: 1rem;
+}
 
 /* page carousel  */
 .owl-stage, .owl-item{
@@ -64,9 +66,25 @@
 .item_news{
     width: 25% !important;
     padding:0rem 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    margin-left:1rem;
+} 
+.page_news .content_item_news{
+    width: 100%;
+}
+.page_news .content_item_news a{
+    color:rgb(36, 33, 33);
 }
 .content_item_news{
     margin-top:1rem;
+    width: 60%;
+}
+.content_item_news h5{
+    font-size: 1rem;
+}
+.content_item_news img{
+    width: 100%;
 }
 .image_news{
     position: relative;
@@ -132,12 +150,12 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .item_image_event{
-    height: 50% !important;
+    height: 60% !important;
     width: 100%;
     object-fit: cover;
 }
 .content_item_event{
-    padding:1.5rem;
+    padding:1rem;
 }
 
 /* page admissions */
@@ -156,6 +174,7 @@
 .col_edu_admissions{
     width: 50%;
     padding:0rem 1rem;
+    height: 250px;
 }
 .image_education{
     width: 50%;
@@ -169,6 +188,7 @@
 .content_col_edu{
     padding:1rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 100%;
 }
 .image_education img{
     height: 100%;
@@ -204,9 +224,10 @@
     background-color: rgba(0, 0, 0, 0.336);
     padding:2rem 0rem;
 }
-.text_cooperate{
+.sub_cooperate{
   
-    
+    width: 500px;
+    margin: auto;
 }
 .list_cooperate{
     display: flex;
@@ -325,4 +346,30 @@
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 700;
+}
+
+/* slick tin tức */
+.slick-dots{
+    display: none;
+}
+.responsive{
+    width: 100%;
+    height: 320px
+}
+.page_news .slick-track{
+    height: 320px;
+    display: flex;
+}
+.page_news .slick-dots{
+    display: none;
+}
+/* slick event thông tin tuyển sinh - điểm chuẩn*/
+.content_image_event .autoplay{
+    height: 320px !important;
+}
+.content_image_event .slick-list{
+    height: 100%;
+}
+.content_image_event .slick-track{
+    height: 100%;
 }

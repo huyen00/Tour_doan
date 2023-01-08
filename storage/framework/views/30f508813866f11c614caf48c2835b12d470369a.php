@@ -6,6 +6,7 @@
                 <h2 class="title_page text-white"><?php echo e(__($section->title)); ?></h2>
                 <div class="list_event">
                     <div class="container d-flex">
+                        <div class="autoplay">
                         <?php $__currentLoopData = $section->page_contents; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $content): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                         <div class="item_event">
                             <img src="<?php echo e(count($content->images) >0 ? $content->images[0]->image : ''); ?>" class="img-fluid item_image_event" alt="">
@@ -17,7 +18,7 @@
                             </div>
                         </div>
                         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-              
+                        </div>
                     </div>
                     
                 </div>

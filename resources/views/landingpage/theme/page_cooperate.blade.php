@@ -4,7 +4,7 @@
         <div class="content_image_cooperate">
             <div class="container">
                 <h2 class="title_page text-white">{{__($section->title)}}</h2>
-                <div class="text_cooperate text-center">
+                <div class="sub_cooperate text-center">
                     <span class="text_page text-white ">{{__($section->sub_title)}}</span>
                 </div>
                 <div class="list_cooperate">
