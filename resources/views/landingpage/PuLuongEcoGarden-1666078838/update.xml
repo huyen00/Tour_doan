@@ -543,7 +543,7 @@ oncallin="animate_callin(get(callout_line), get(callout_line_vertical));"/>
   </action>
   
     <!--  load the soundinterface plugin  -->
-    <plugin name="soundinterface" url.flash="%SWFPATH%/plugins/soundinterface.swf" url.html5="%SWFPATH%/plugins/soundinterface.js" rootpath="" preload="true" keep="true"    volume="0.3"/>
+    <!-- <plugin name="soundinterface" url.flash="%SWFPATH%/plugins/soundinterface.swf" url.html5="%SWFPATH%/plugins/soundinterface.js" rootpath="" preload="true" keep="true"    volume="0.3"/> -->
  <!--  start playing the sound  -->
-    <events name="currentpano" onnewpano="playsound(bgsnd, 'http://krpano.com/panos/xmas/ding_dong_merrily_on_high.mp3, 0);" onremovepano="stopsound(bgsnd);"/>
+    <!-- <events name="currentpano" onnewpano="playsound(bgsnd, 'http://krpano.com/panos/xmas/ding_dong_merrily_on_high.mp3, 0);" onremovepano="stopsound(bgsnd);"/> -->
 </krpano>

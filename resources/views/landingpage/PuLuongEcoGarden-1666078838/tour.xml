@@ -12,9 +12,17 @@
       <include url="plugins/youtube_player.xml" />
           <include url="plugins/showtext.xml" />
 
+<include url="add_hotspot/plugins_l/add_hotspot.xml" if="calc(editor)"/>
+    <include url="%FIRSTXML%/add_hotspot/plugins_l/plugin_a/poligon.xml" if="calc(editor)"/>
+	<include url="%FIRSTXML%/add_hotspot/plugins_l/plugin_a/vid_hs.xml" if="calc(editor)"/>
+	<include url="%FIRSTXML%/add_hotspot/plugins_l/plugin_a/sound_hs.xml" if="calc(editor)"/>
+	<include url="%FIRSTXML%/add_hotspot/plugins_l/plugin_a/photo.xml" if="calc(editor)"/>
+	<include url="%FIRSTXML%/add_hotspot/plugins_l/plugin_a/youtube.xml" if="calc(editor)"/>
+    <editor_hs pin="mihailov04@ya.ru" />
+	<include url="plugins/video_player.xml" />
     <!-- <include url="index_skin.xml"/> -->
-    <include url="index_core.xml"/>
-    <include url="index_messages_en.xml"/>
+    <!-- <include url="index_core.xml"/>
+    <include url="index_messages_en.xml"/> -->
     <!-- <include url="index_messages_fr.xml"/> -->
           
           
