@@ -31,7 +31,7 @@
                                         <div class="box_duoi">
                                             <div class="left_news">
                                                 <i class="fa-regular fa-calendar-days"></i>  <?php echo e(\Carbon\Carbon::parse($tintuc->created_at)->format('d/m/Y')); ?></div>
-                                            <a href="<?php echo e(route('new.detail',__($tintuc->slug))); ?>" class="read_view">See more <i class="fa-regular fa-calendar-days"></i></a>
+                                            <a href="<?php echo e(route('new.detail',__($tintuc->slug))); ?>" class="read_view">Xem thêm <i class="fa-regular fa-calendar-days"></i></a>
                                         </div>
                                     </div>
                                 </div>

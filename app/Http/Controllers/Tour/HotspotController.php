@@ -117,7 +117,7 @@ class HotspotController extends Controller
                 break;
             case "onclick" :
                 $content = $this->saveContent($hotspot,$request);
-                $hotspot->onclick = "js(showform(" . $hotspot->pano->name . "," . $content->description_en . "))";
+                $hotspot->onclick = $content->description_en;
                 $hotspot->save();
                 break;
         }

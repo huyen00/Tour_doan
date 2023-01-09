@@ -13,7 +13,7 @@
                 
                    
                     <div class="featured_news_list">
-                        <h5>Featured News</h5>
+                        <h5>Tin Nổi Bật</h5>
                         <ul class="related_news" style="top: 100px;">
                             <?php $__currentLoopData = $tintuc_lienquan; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $tintuc): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                             <li class="col_related_news">
@@ -31,7 +31,7 @@
                                         <div class="box_duoi">
                                             <div class="left_news">
                                                 <i class="fa-regular fa-calendar-days"></i>  <?php echo e(\Carbon\Carbon::parse($tintuc->created_at)->format('d/m/Y')); ?></div>
-                                            <a href="<?php echo e(route('new.detail',__($tintuc->slug))); ?>" class="read_view">See more <i class="fa-regular fa-calendar-days"></i></a>
+                                            <a href="<?php echo e(route('new.detail',__($tintuc->slug))); ?>" class="read_view">Xem thêm <i class="fa-regular fa-calendar-days"></i></a>
                                         </div>
                                     </div>
                                 </div>

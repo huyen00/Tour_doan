@@ -37,17 +37,19 @@ class readXmlController extends Controller
                         $index_scene = array_search($pano->id_thumb,$array_sceneName);
                         $index_layer = 0;
                         // dd($datascene);
-                        foreach($datascene[$index_scene]['hotspot'] as $index=>$_hotspot){
-                            if(array_key_exists('@attributes',$_hotspot) == true){
-                                $hotspot_data = $_hotspot['@attributes'];
-                                if(array_key_exists('style',$hotspot_data) == true){
-                                    if($hotspot_data['style'] == "hs_image_text"  && $datascene[$index_scene]['layer'] != null){
-                                        if($index_layer < count($datascene[$index_scene]['layer'])){
-                                            $layer_data = $datascene[$index_scene]['layer'][$index_layer]['@attributes'];
-                                        }
-                                        $index_layer++;
-                                }
-                                    $hotspot = $this->createHotSpot($hotspot_data,$pano,$layer_data);
+                        if(array_key_exists('hotspot',$datascene[$index_scene])){
+                            foreach($datascene[$index_scene]['hotspot'] as $index=>$_hotspot){
+                                if(array_key_exists('@attributes',$_hotspot) == true){
+                                    $hotspot_data = $_hotspot['@attributes'];
+                                    if(array_key_exists('style',$hotspot_data) == true){
+                                        if($hotspot_data['style'] == "hs_image_text"  && $datascene[$index_scene]['layer'] != null){
+                                            if($index_layer < count($datascene[$index_scene]['layer'])){
+                                                $layer_data = $datascene[$index_scene]['layer'][$index_layer]['@attributes'];
+                                            }
+                                            $index_layer++;
+                                    }
+                                        $hotspot = $this->createHotSpot($hotspot_data,$pano,$layer_data);
+                                    }
                                 }
                             }
                         }
@@ -57,7 +59,7 @@ class readXmlController extends Controller
             }
         }
         $isEditor = true;
-
+        // return $tour->panos;
 
         if($tour->template ==null){
             return view('template.template1',compact('isEditor','tour','tour_group','file','list_hotspot_first'));

@@ -6,6 +6,7 @@
                 <h2 class="title_page text-white">{{__($section->title)}}</h2>
                 <div class="list_event">
                     <div class="container d-flex">
+                        <div class="autoplay">
                         @foreach ($section->page_contents as $content )
                         <div class="item_event">
                             <img src="{{count($content->images) >0 ? $content->images[0]->image : ''}}" class="img-fluid item_image_event" alt="">
@@ -17,7 +18,7 @@
                             </div>
                         </div>
                         @endforeach
-              
+                        </div>
                     </div>
                     
                 </div>

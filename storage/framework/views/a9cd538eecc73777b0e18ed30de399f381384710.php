@@ -1,5 +1,5 @@
 <header class="header_page">
-    <div class="container">
+    <div class="container logo_pc">
         
             <div class="clearfix">
                 <a href="" style="float:left">
@@ -12,11 +12,11 @@
            
         
     </div>
-    <div class="row">
+    <div class="row menu_pc">
         <div class="menu_page">
             <ul class="list_menu_page">
                 <li class="item_menu">
-                    <a href="page/gioithieu.html" class="link_menu">
+                    <a href="/layout" class="link_menu">
                         Giới thiệu
                         <i class="fa-solid fa-angle-down"></i>
                     </a>
@@ -29,21 +29,6 @@
                         </li>
                         <li class="item_menu_sub">
                             <a href="" class="link_menu_sub">Sứ mệnh tầm nhìn</a>
-                        </li>
-                        <li class="item_menu_sub">
-                            <a href="" class="link_menu_sub">Thư Viện Ảnh</a>
-                        </li>
-                        <li class="item_menu_sub">
-                            <a href="" class="link_menu_sub">Video</a>
-                        </li>
-                        <li class="item_menu_sub">
-                            <a href="" class="link_menu_sub">Các tổ chức đoàn thể</a>
-                        </li>
-                        <li class="item_menu_sub">
-                            <a href="" class="link_menu_sub">Công tác Đảng</a>
-                        </li>
-                        <li class="item_menu_sub">
-                            <a href="" class="link_menu_sub">Công tác Đoàn</a>
                         </li>
                         <li class="item_menu_sub">
                             <a href="" class="link_menu_sub">Danh sách cán bộ</a>
@@ -59,7 +44,7 @@
                     <ul class="list_menu_sub">
                        <div class="row">
                         <div class="list_khoa">
-                            <h6 class="title_menu_sub">KHoa</h6>
+                            <h6 class="title_menu_sub">Khoa</h6>
                             <li class="item_menu_sub">
                                 <a href="page/khoa.html" class="link_menu_sub">Khoa công trình</a>
                             </li>
@@ -227,4 +212,227 @@
             </ul>
         </div>
     </div>
+    
+    <!-- <div class="menu__mobile">
+        <div class="menu__logo-mobile">
+            <div class="clearfix d-flex">
+                <a href="" class="logo_mobile" style="float:left">
+                    <img src="landingpage/assets/image/logo.png" class="logo_dh img-fluid" alt="">
+                </a>
+                <div class="logo_mobile_menu" style="float:right;font-weight:600">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <div class="menu_content_mobile">
+            
+
+        </div> -->
+        <!-- <div class="menu_content_mobile">
+          
+            <div class="close_menu_mobile">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="content_mobile">
+                <div class="flex-row menu_search relative">
+                    <div class="flex-col  flex-grow">
+                        <input type="search" class="search-field mb-0" name="s" value="" id="s" placeholder="Search…">
+                        <div class="flex-col icon_search_mobile">
+                            <button type="submit" class="ux-search-submit submit-button secondary button icon mb-0" aria-label="Submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>				</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <ul class="list_menu_mobile">
+                    
+                    <li class="item_menu_mobile show_menu_sub">
+                        <a  class="link_mobile">
+                            Giới Thiệu
+                        </a>
+                        <div class="toggle" >
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <ul class="list_sub_mobile">
+                            <li class="item_sub_mobile">
+                                <a href="" class="link_sub">Thông tin chung</a>
+                            </li>
+                            <li class="item_sub_mobile">
+                                <a href="" class="link_sub">Thuy Loi University Virtual Tour</a>
+                            </li>
+                            <li class="item_sub_mobile">
+                                <a href="" class="link_sub">Sứ mệnh tầm nhìn</a>
+                            </li>
+                            <li class="item_sub_mobile">
+                                <a href="" class="link_sub">Danh sách cán bộ</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item_menu_mobile show_menu_sub">
+                        <a  class="link_mobile">
+                        Khoa - Trung tâm 
+                        </a>
+                        <div class="toggle" >
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <ul class="list_sub_mobile">
+                            <li class="item_sub_mobile">
+                                <a href="" class="link_sub">Khoa kỹ thuật tài nguyên nước</a>
+                            </li>
+                            <li class="item_sub_mobile">
+                                <a href="" class="link_sub">Khoa công nghệ thông tin</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item_menu_mobile show_menu_sub">
+                        <a  class="link_mobile">
+                        Đào tạo
+                        </a>
+                        <div class="toggle" >
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <ul class="list_sub_mobile">
+                            <li class="item_sub_mobile">
+                                <a href="" class="link_sub">Hệ Đại Học</a>
+                            </li>
+                            <li class="item_sub_mobile">
+                                <a href="" class="link_sub">Hệ Thạc Sỹ</a>
+                            </li>
+                            <li class="item_sub_mobile">
+                                <a href="" class="link_sub">Hệ Tiến Sỹ</a>
+                            </li>
+                            <li class="item_sub_mobile">
+                                <a href="" class="link_sub">Đào Tạo Chứng Chỉ</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item_menu_mobile show_menu_sub">
+                        <a  class="link_mobile">
+                        Nghiên Cứu
+                        </a>
+                        <div class="toggle" >
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <ul class="list_sub_mobile">
+                            <li class="item_sub_mobile">
+                                <a href="" class="link_sub">Hệ Đại Học</a>
+                            </li>
+                            <li class="item_sub_mobile">
+                                <a href="" class="link_sub">Hệ Thạc Sỹ</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item_menu_mobile show_menu_sub">
+                        <a  class="link_mobile">
+                        Tuyển Sinh
+                        </a>
+                        <div class="toggle" >
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <ul class="list_sub_mobile">
+                            <li class="item_sub_mobile">
+                                <a href="" class="link_sub">Tuyển sinh 2022</a>
+                            </li>
+                            <li class="item_sub_mobile">
+                                <a href="" class="link_sub">Điểm chuẩn tham khảo</a>
+                            </li>
+                            <li class="item_sub_mobile">
+                                <a href="" class="link_sub">Tuyển sinh đại học</a>
+                            </li>
+                            <li class="item_sub_mobile">
+                                <a href="" class="link_sub">Tuyển sinh sau đại học</a>
+                            </li>
+                            <li class="item_sub_mobile">
+                                <a href="" class="link_sub">Hỏi đáp về tuyển sinh</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item_menu_mobile show_menu_sub">
+                        <a  class="link_mobile">
+                        Virtual Tour
+                        </a>
+                        
+                    </li>
+                    <li class="item_menu_mobile show_menu_sub">
+                        <a  class="link_mobile">
+                        Sinh Viên
+                        </a>
+                        <div class="toggle" >
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <ul class="list_sub_mobile">
+                            <li class="item_sub_mobile">
+                                <a href="" class="link_sub">Tuyển sinh 2022</a>
+                            </li>
+                            <li class="item_sub_mobile">
+                                <a href="" class="link_sub">Điểm chuẩn tham khảo</a>
+                            </li>
+                            <li class="item_sub_mobile">
+                                <a href="" class="link_sub">Tuyển sinh đại học</a>
+                            </li>
+                            <li class="item_sub_mobile">
+                                <a href="" class="link_sub">Tuyển sinh sau đại học</a>
+                            </li>
+                            <li class="item_sub_mobile">
+                                <a href="" class="link_sub">Hỏi đáp về tuyển sinh</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item_menu_mobile show_menu_sub">
+                        <a  class="link_mobile">
+                        Hợp tác - Đối ngoại
+                        </a>
+                        <div class="toggle" >
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <ul class="list_sub_mobile">
+                            <li class="item_sub_mobile">
+                                <a href="" class="link_sub">Tuyển sinh 2022</a>
+                            </li>
+                            <li class="item_sub_mobile">
+                                <a href="" class="link_sub">Điểm chuẩn tham khảo</a>
+                            </li>
+                            <li class="item_sub_mobile">
+                                <a href="" class="link_sub">Tuyển sinh đại học</a>
+                            </li>
+                            <li class="item_sub_mobile">
+                                <a href="" class="link_sub">Tuyển sinh sau đại học</a>
+                            </li>
+                            <li class="item_sub_mobile">
+                                <a href="" class="link_sub">Hỏi đáp về tuyển sinh</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item_menu_mobile show_menu_sub">
+                        <a  class="link_mobile">
+                       Tin tức
+                        </a>
+                        <div class="toggle" >
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <ul class="list_sub_mobile">
+                            <li class="item_sub_mobile">
+                                <a href="" class="link_sub">Tuyển sinh 2022</a>
+                            </li>
+                            <li class="item_sub_mobile">
+                                <a href="" class="link_sub">Điểm chuẩn tham khảo</a>
+                            </li>
+                            <li class="item_sub_mobile">
+                                <a href="" class="link_sub">Tuyển sinh đại học</a>
+                            </li>
+                            <li class="item_sub_mobile">
+                                <a href="" class="link_sub">Tuyển sinh sau đại học</a>
+                            </li>
+                            <li class="item_sub_mobile">
+                                <a href="" class="link_sub">Hỏi đáp về tuyển sinh</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+           
+            
+        </div> -->
+    <!-- </div> -->
 </header><?php /**PATH C:\xampp\htdocs\Tour_doan\resources\views/landingpage/header.blade.php ENDPATH**/ ?>

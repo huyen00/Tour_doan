@@ -245,6 +245,8 @@ class TourController extends Controller
         $list_hotspot_first = $tour->panos[0]->hotspots;
         $file = $tour->path . "/tour.xml";
         $isEditor = false;
+
+        // return $tour->panos;
         if ($tour->template == null) {
             return view('template.template1', compact('isEditor', 'tour', 'tour_group', 'file', 'list_hotspot_first'));
         } else {

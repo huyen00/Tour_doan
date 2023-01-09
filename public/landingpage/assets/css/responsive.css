@@ -1,0 +1,119 @@
+/* max-width: 320px (điện thoại di động, hiển thị chiều dọc) */
+@media  only screen and  (max-width:320px){
+    /* .menu_pc{
+        display: none !important;
+    }
+    .logo_pc{
+        display: none;
+    } */
+
+    /* mobile */
+    .menu__mobile{
+        /* height: 100%;
+        position: fixed;
+        width: 100%;
+        top: 0; */
+        /* background: #08080866; */
+        /* z-index: 2; */
+    }
+    .logo_mobile{
+        width: 70%;
+    }
+    .logo_mobile_menu{
+        width: 30%;
+    }
+    .logo_mobile_menu i{
+        float: right;
+        padding-top: 0.5rem;
+    font-size: 20px;
+    }
+    .menu__logo-mobile{
+        padding:0.7rem;
+    }
+    /* .menu_content_mobile{
+      height: 100%;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background: #08080866;
+        z-index: 2;
+        bottom:0;
+        left:0;
+       
+    }
+    .list_menu_mobile{
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        background-color: #ececec;
+    }
+    .close_menu_mobile{
+        float: right;
+        padding-right: 20px;
+        padding-top: 10px;
+
+    }
+    .content_mobile{
+        height: 100%;
+        background: #fff;
+        z-index: 2;
+        width: 80%;
+        position: absolute;
+    }
+    .menu_search{
+        padding: 1rem 1.5rem;
+
+    }
+    .search-field{
+        border: 1px solid #000;
+        border-radius: 20px;
+        width: 200px;
+    }
+    .content_mobile .flex-grow{
+        display: flex;
+        position: relative;
+        width: 200px;
+    }
+    .icon_search_mobile{
+        position: absolute;
+        right: 0;
+    }
+    .ux-search-submit{
+        border: 0;
+        background: 0;
+    }
+    .list_menu_mobile{
+        padding: 1.4rem;
+        height: 100%;
+    }
+    .item_menu_mobile{
+        display: flex;
+        position: relative;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-top: 1px solid #ececec;
+    }
+    .list_sub_mobile{
+        position: absolute;
+        top: 30px;
+        padding-left: 1rem;
+        display: none;
+    }
+    .link_mobile{
+        width: 100%;
+    }
+    .item_sub_mobile{
+        padding:0.3rem 0rem;
+    } */
+    .menu_content_mobile{
+        position: fixed;
+        top:0;
+        bottom:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(8, 8, 8, 0.418);
+        z-index: 10;
+    }
+}

@@ -33,7 +33,7 @@
                 <div class="content_page_right">
                     <div class="content_introduce">
                         <div class="image_banner_introduce">
-                            <img src="../assets/image/banner1.jpg" class="img_page" alt="">
+                            <img src="../landingpage/assets/image/banner1.jpg" class="img_page" alt="">
                         </div>
                         <div class="list_content_right">
                             <div class="row">

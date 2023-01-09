@@ -10,7 +10,8 @@
     onready: krpanoReady,
     initvars: {
         editor: editor,
-        pano : tour.panos
+        pano : tour.panos,
+        // info_hotspot : 
     }
   });
   function activeText(){

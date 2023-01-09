@@ -31,7 +31,7 @@
                                         <div class="box_duoi">
                                             <div class="left_news">
                                                 <i class="fa-regular fa-calendar-days"></i>  {{ \Carbon\Carbon::parse($content->created_at)->format('d/m/Y')}}</div>
-                                            <a href="{{route('post.detail',__($content->sub_title))}}" class="read_view">See more <i class="fa-regular fa-calendar-days"></i></a>
+                                            <a href="{{route('post.detail',__($content->sub_title))}}" class="read_view">Xem thêm <i class="fa-regular fa-calendar-days"></i></a>
                                         </div>
                                     </div>
                                 </div>
